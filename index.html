@@ -105,6 +105,15 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const manifest = JSON.parse(manifestEl.textContent);
     let template = JSON.parse(templateEl.textContent);
+    template = template.replace(
+      'WishLeaf · v1.0 · 2026',
+      '© 2026 DreamRove LLC. WishLeaf is developed and operated by DreamRove LLC.'
+    );
+    template = template.replace(
+      '<a href="#">Support</a>',
+      '<a href="mailto:DreamRove@outlook.com">DreamRove@outlook.com</a>'
+    );
+    template = template.replace('<a href="#">Privacy</a>', '');
 
     // Nested page bundles (iframe targets). Each ships ONCE, in the ROOT
     // document's manifest; frame srcs carry an about:blank#<uuid> marker
