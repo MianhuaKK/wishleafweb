@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WishLeaf Terms of Service">
+  <meta name="theme-color" content="#2F4533">
+  <title>Terms of Service · WishLeaf</title>
+  <link rel="icon" href="./images/clover.svg" type="image/svg+xml">
+  <style>
+    @font-face {
+      font-family: "Fraunces";
+      src: url("./font/web/Fraunces-latin.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Inter Tight";
+      src: url("./font/web/InterTight-regular-latin.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+    :root {
+      color-scheme: light;
+      --forest: #2f4533;
+      --forest-dark: #26382a;
+      --paper: #f6f1e6;
+      --ink: #29332a;
+      --sage: #b7bca3;
+      --rule: rgba(47, 69, 51, 0.16);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+    }
+    a { color: inherit; }
+    .topbar {
+      background: var(--forest);
+      color: #fcf9f1;
+      border-bottom: 1px solid rgba(252, 249, 241, 0.12);
+    }
+    .topbar-inner {
+      width: min(100% - 40px, 960px);
+      min-height: 78px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .brand img { width: auto; height: 28px; }
+    .brand span {
+      font: 500 20px/1 "Fraunces", Georgia, serif;
+      letter-spacing: -0.3px;
+    }
+    .back {
+      margin-left: auto;
+      color: #d8decb;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    .back:hover, .back:focus-visible { color: #fff; text-decoration: underline; }
+    .hero {
+      background: var(--forest);
+      color: #fcf9f1;
+      padding: 70px 20px 92px;
+      text-align: center;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--sage);
+      font: italic 13px/1.4 "Fraunces", Georgia, serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font: 500 clamp(42px, 7vw, 66px)/1.06 "Fraunces", Georgia, serif;
+      letter-spacing: -0.035em;
+    }
+    .dates {
+      margin: 22px 0 0;
+      color: #d8decb;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+    .page {
+      width: min(100% - 40px, 820px);
+      margin: -38px auto 72px;
+      padding: clamp(30px, 6vw, 64px);
+      position: relative;
+      background: #fffdf8;
+      border: 1px solid rgba(47, 69, 51, 0.1);
+      border-radius: 22px;
+      box-shadow: 0 24px 65px rgba(38, 56, 42, 0.12);
+    }
+    .intro {
+      margin-top: 0;
+      color: #465247;
+      font: 400 clamp(20px, 3vw, 24px)/1.55 "Fraunces", Georgia, serif;
+    }
+    h2 {
+      margin: 52px 0 13px;
+      padding-top: 4px;
+      color: var(--forest-dark);
+      font: 600 clamp(25px, 4vw, 31px)/1.24 "Fraunces", Georgia, serif;
+      letter-spacing: -0.02em;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 42px;
+      height: 2px;
+      margin-top: 13px;
+      background: #9dac96;
+    }
+    h3 {
+      margin: 30px 0 8px;
+      color: var(--forest-dark);
+      font: 650 19px/1.35 "Fraunces", Georgia, serif;
+    }
+    p { margin: 10px 0 16px; }
+    ul, ol { margin: 10px 0 20px; padding-left: 1.3rem; }
+    li { margin: 5px 0; padding-left: 0.25rem; }
+    li::marker { color: #778b73; }
+    address { font-style: normal; }
+    .legal-link { color: #315d3a; font-weight: 700; }
+    .contact-card {
+      margin-top: 18px;
+      padding: 20px 22px;
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+      background: rgba(183, 188, 163, 0.12);
+    }
+    .contact-card p { margin: 0; }
+    .contact-card a { color: #315d3a; font-weight: 700; }
+    footer {
+      background: var(--forest-dark);
+      color: #b7c1b2;
+      padding: 28px 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+    footer a { color: #d8decb; }
+    @media (max-width: 600px) {
+      body { font-size: 15px; }
+      .topbar-inner { width: min(100% - 30px, 960px); min-height: 68px; }
+      .hero { padding: 52px 18px 72px; }
+      .page { width: calc(100% - 24px); margin-top: -28px; border-radius: 16px; }
+      h2 { margin-top: 42px; }
+      .back span { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./index.html" aria-label="WishLeaf home">
+        <img src="./images/clover.svg" alt="">
+        <span>WishLeaf</span>
+      </a>
+      <a class="back" href="./index.html" aria-label="Back to WishLeaf home">← <span>Back to WishLeaf</span></a>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="page-title">
+    <p class="eyebrow">Growing together</p>
+    <h1 id="page-title">Terms of Service</h1>
+    <p class="dates">Effective Date: September 8, 2026<br>Last Updated: September 8, 2026</p>
+  </section>
+
+  <main class="page">
+    <p class="intro">Welcome to WishLeaf.</p>
+    <p>These Terms of Service (“Terms”) form an agreement between you and <strong>DreamRove LLC</strong> (“DreamRove,” “WishLeaf,” “we,” “us,” or “our”) governing your download, access to, and use of the WishLeaf application and related services.</p>
+    <p>Please read these Terms together with the <a class="legal-link" href="./privacy/">WishLeaf Privacy Policy</a>.</p>
+    <p>By creating an account, accepting these Terms, or using WishLeaf, you agree to be bound by these Terms. If you do not agree, do not use WishLeaf.</p>
+
+    <section>
+      <h2>1. The Service</h2>
+      <p>WishLeaf is a personal productivity, planning, and long-term goal management application.</p>
+      <p>Depending on the version and features available to you, WishLeaf may provide:</p>
+      <ul><li>task creation, editing, scheduling, repeating, and completion tracking;</li><li>long-term wishes, milestones, daily plans, and wish-path management;</li><li>AI-powered task suggestions, task breakdowns, plan adjustments, wish planning, conversations, Daily Reflection, and weekly reports;</li><li>plant-growth, garden, and other motivational features;</li><li>focus and activity tracking features;</li><li>notifications, history, account management, and subscription features.</li></ul>
+      <p>Some features may be experimental, preview, beta, or otherwise subject to change.</p>
+      <p>Actual features, supported languages, device requirements, usage limits, and availability may vary by version, platform, account type, or service configuration.</p>
+    </section>
+
+    <section>
+      <h2>2. Eligibility and Minors</h2>
+      <p>You must be at least <strong>13 years old</strong> to create and use a WishLeaf account.</p>
+      <p>If the law where you live requires you to be older, or requires authorization from a parent or legal guardian before you can independently agree to these Terms or consent to certain processing of personal information, you may use WishLeaf only in accordance with those requirements.</p>
+      <p>WishLeaf is not designed specifically for children under 13.</p>
+      <p>If we learn that a child has used WishLeaf in circumstances where use was not legally permitted, we may take appropriate steps, including restricting the account or deleting associated information where required.</p>
+    </section>
+
+    <section>
+      <h2>3. Accounts and Account Security</h2>
+      <p>You agree to provide accurate information where required and to keep relevant account information reasonably up to date.</p>
+      <p>You are responsible for:</p>
+      <ul><li>maintaining the security of your login credentials;</li><li>protecting devices through which you access WishLeaf;</li><li>activity conducted through your account, except to the extent caused by our fault or otherwise provided by applicable law.</li></ul>
+      <p>If you believe your account has been compromised or accessed without authorization, please contact us promptly.</p>
+      <p>You may not:</p>
+      <ul><li>sell, rent, transfer, or sublicense your WishLeaf account;</li><li>impersonate another person;</li><li>use another person’s account without authorization;</li><li>misrepresent your identity or affiliation with another person or organization.</li></ul>
+    </section>
+
+    <section>
+      <h2>4. License to Use WishLeaf</h2>
+      <p>Subject to your compliance with these Terms, we grant you a limited, personal, non-exclusive, non-transferable, non-sublicensable, and revocable license to use WishLeaf for your own personal, non-commercial purposes on compatible devices that you own or control.</p>
+      <p>Except where applicable law expressly permits otherwise, you may not:</p>
+      <ul><li>copy, modify, distribute, sell, or rent WishLeaf or any substantial part of it;</li><li>reverse engineer, decompile, or attempt to extract source code from WishLeaf;</li><li>circumvent technical restrictions, access controls, security systems, usage limits, or payment mechanisms.</li></ul>
+      <p>If you download WishLeaf through the Apple App Store, your use is also subject to Apple’s applicable usage rules.</p>
+    </section>
+
+    <section>
+      <h2>5. Your Content</h2>
+      <p>“User Content” means content that you submit, create, save, or generate through WishLeaf, including tasks, wishes, notes, reflections, chat inputs, and feedback.</p>
+      <p>You retain any rights you lawfully hold in your User Content.</p>
+      <p>To operate WishLeaf, you grant us a worldwide, non-exclusive, royalty-free license to host, store, copy, transmit, format, and process User Content only to the extent reasonably necessary to:</p>
+      <ul><li>provide WishLeaf;</li><li>operate features you request;</li><li>secure and maintain the service;</li><li>comply with applicable law;</li><li>improve WishLeaf as described in the Privacy Policy.</li></ul>
+      <p>This license does not give us the right to sell your private User Content as a standalone product.</p>
+      <p>You represent that you have the rights necessary to submit User Content and that your submission and use of that content through WishLeaf does not violate applicable law or the rights of another person.</p>
+      <p>Do not submit content that unlawfully infringes another person’s intellectual-property rights, privacy rights, or other legal rights.</p>
+      <p>Our handling of personal information contained in User Content is described in the <a class="legal-link" href="./privacy/">WishLeaf Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>6. AI-Powered Features</h2>
+      <h3>6.1 AI Processing</h3>
+      <p>Certain WishLeaf features use third-party artificial intelligence services.</p>
+      <p>When you actively use an AI-powered feature, content relevant to that request and contextual information reasonably necessary to perform the feature may be sent to an AI service provider.</p>
+      <p>Depending on the feature, this may include:</p>
+      <ul><li>task information;</li><li>wish descriptions;</li><li>milestones;</li><li>recent activity;</li><li>notes or reflections;</li><li>relevant conversation history;</li><li>other context necessary to produce the requested result.</li></ul>
+      <p>Additional information about AI processing and third-party service providers is available in the <a class="legal-link" href="./privacy/">WishLeaf Privacy Policy</a>.</p>
+      <p>Please avoid submitting government identification numbers, payment credentials, complete medical records, passwords, or other highly sensitive information that is not necessary for your request.</p>
+
+      <h3>6.2 AI Output Limitations</h3>
+      <p>AI output is generated automatically and may be:</p>
+      <ul><li>inaccurate;</li><li>incomplete;</li><li>outdated;</li><li>inappropriate for your circumstances;</li><li>inconsistent between requests;</li><li>similar to content provided to other users.</li></ul>
+      <p>You are responsible for reviewing and evaluating AI output before relying on it.</p>
+      <p>WishLeaf does not guarantee that AI-generated content will achieve a particular result.</p>
+
+      <h3>6.3 No Professional Advice</h3>
+      <p>WishLeaf is not a medical, psychological treatment, legal, financial, or other professional advisory service.</p>
+      <p>AI-generated reflections, encouragement, plans, suggestions, or other content do not constitute professional diagnosis, treatment, legal advice, financial advice, or other regulated professional advice.</p>
+      <p>You should seek appropriate professional assistance where the nature of your situation requires it.</p>
+      <p>If you are experiencing an emergency or an immediate risk to health or safety, contact local emergency services or another appropriate source of urgent assistance.</p>
+
+      <h3>6.4 AI Usage Limits</h3>
+      <p>To maintain service reliability, manage costs, and prevent abuse, we may impose reasonable usage limits on AI-powered features.</p>
+      <p>Limits may be based on:</p>
+      <ul><li>number of requests;</li><li>token usage;</li><li>frequency;</li><li>daily, monthly, lifetime, or other usage periods;</li><li>feature-specific allowances;</li><li>account type or subscription status.</li></ul>
+      <p>Current limits and renewal timing are determined by the service configuration shown in WishLeaf.</p>
+    </section>
+
+    <section>
+      <h2>7. Free Features and WishLeaf Pro</h2>
+      <p>WishLeaf may offer free functionality and paid subscription plans such as WishLeaf Pro.</p>
+      <p>Features, limits, benefits, subscription periods, introductory offers, trials, and prices may vary and will be shown before purchase where applicable.</p>
+      <p>The amount charged to you is determined by the applicable app marketplace and the purchase confirmation screen.</p>
+
+      <h3>7.1 Purchases and Automatic Renewal</h3>
+      <p>Subscriptions may be purchased through the Apple App Store, Google Play, or another supported app marketplace.</p>
+      <p>The applicable marketplace processes:</p>
+      <ul><li>payment;</li><li>taxes;</li><li>billing information;</li><li>renewal;</li><li>cancellation;</li><li>certain refund requests.</li></ul>
+      <p>We do not directly receive your full payment card information.</p>
+      <p>Unless otherwise stated at purchase, an auto-renewing subscription will continue renewing until cancelled in accordance with the rules of the applicable marketplace.</p>
+      <p>After a successful purchase, subscription benefits may require a short period to synchronize.</p>
+      <p>If your subscription status does not appear immediately, avoid making duplicate purchases and use the restore-purchase function where available.</p>
+
+      <h3>7.2 Cancelling and Restoring Purchases</h3>
+      <p>You can cancel an auto-renewing subscription through the subscription-management settings of the applicable app marketplace.</p>
+      <p>Unless applicable law or marketplace rules provide otherwise, cancellation generally takes effect at the end of the current paid subscription period.</p>
+      <p>You may continue using paid benefits until the end of that period.</p>
+      <p>If you reinstall WishLeaf, change devices, or your subscription status is not correctly synchronized, you may use the restore-purchase feature where available.</p>
+      <p>Restoration depends on your marketplace account, WishLeaf account, and the applicable purchase records.</p>
+
+      <h3>7.3 Refunds</h3>
+      <p>Purchases and refunds are generally administered by the marketplace through which the transaction occurred.</p>
+      <p>You may request a refund from the applicable marketplace according to its policies.</p>
+      <p>Where reasonably possible, we may assist with subscription-related questions, but we do not control marketplace refund decisions.</p>
+      <p>Nothing in these Terms limits any refund, cancellation, or consumer right that cannot lawfully be limited.</p>
+
+      <h3>7.4 Changes to Prices, Benefits, and Limits</h3>
+      <p>We may change:</p>
+      <ul><li>prices for future subscriptions;</li><li>paid benefits;</li><li>usage limits;</li><li>plan structure.</li></ul>
+      <p>Changes affecting existing subscriptions will be handled in accordance with applicable law and marketplace rules.</p>
+      <p>If you do not agree with a future renewal price or plan change, you may cancel your subscription before the applicable renewal date.</p>
+
+      <h3>7.5 Deleting Your Account Does Not Cancel Your Subscription</h3>
+      <p>Deleting your WishLeaf account does not automatically cancel an App Store or Google Play subscription.</p>
+      <p>To prevent future renewal charges, you must separately cancel the subscription through the applicable marketplace.</p>
+    </section>
+
+    <section>
+      <h2>8. Acceptable Use</h2>
+      <p>You may not use WishLeaf to:</p>
+      <ol><li>violate applicable law, regulation, court order, or legally binding regulatory requirement;</li><li>infringe or facilitate infringement of intellectual-property, privacy, personality, or other legal rights;</li><li>submit, distribute, or facilitate unlawful, fraudulent, threatening, exploitative, or seriously abusive content;</li><li>impersonate another person or falsely represent your identity or affiliation;</li><li>gain or attempt to gain unauthorized access to accounts, systems, APIs, servers, databases, or restricted features;</li><li>bypass or attempt to bypass security measures, quotas, payment mechanisms, free-usage restrictions, or access controls;</li><li>use bots, scripts, scraping systems, or other automated methods that impose unreasonable load or interfere with WishLeaf;</li><li>distribute malware or other harmful code;</li><li>interfere with, damage, test without authorization, or disrupt the security, integrity, or operation of WishLeaf;</li><li>use WishLeaf in a manner that creates unreasonable legal, security, or operational risk for us, other users, or third parties.</li></ol>
+      <p>Except where applicable law expressly permits otherwise, you may not use WishLeaf, its outputs, or access to its systems to systematically extract or reproduce protected elements of the service for the purpose of developing or operating a directly competing service.</p>
+    </section>
+
+    <section>
+      <h2>9. Intellectual Property and Feedback</h2>
+      <p>WishLeaf, including its software, design, graphics, trademarks, text, interface elements, and other content that is not User Content, is owned by DreamRove LLC or the applicable rights holder and is protected by intellectual-property laws.</p>
+      <p>Except for the limited license expressly granted in these Terms, no rights in WishLeaf are transferred to you.</p>
+      <p>If you provide suggestions, ideas, or feedback about WishLeaf, you agree that we may use that feedback without payment or obligation to you.</p>
+      <p>This does not give us unrestricted rights to personal information contained in feedback. Personal information remains subject to the <a class="legal-link" href="./privacy/">WishLeaf Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>10. Third-Party Services</h2>
+      <p>WishLeaf relies on third-party services to provide functions such as:</p>
+      <ul><li>authentication;</li><li>cloud infrastructure and storage;</li><li>artificial-intelligence services;</li><li>app distribution and payments;</li><li>subscription management;</li><li>push notifications;</li><li>logging, error monitoring, diagnostics, and service observability;</li><li>other supporting infrastructure.</li></ul>
+      <p>These third-party services are operated by their respective providers and may also be subject to their own terms and privacy policies.</p>
+      <p>We take reasonable steps in selecting and managing service providers, but we do not control the continuous availability of third-party systems.</p>
+      <p>If a third-party service becomes temporarily unavailable, some WishLeaf features may also become temporarily unavailable.</p>
+      <p>Where reasonably practicable, we will attempt to restore affected functionality or provide appropriate information.</p>
+    </section>
+
+    <section>
+      <h2>11. Service Changes, Interruptions, and Experimental Features</h2>
+      <p>We may modify, suspend, replace, or discontinue features where reasonably necessary because of:</p>
+      <ul><li>product development;</li><li>maintenance;</li><li>security concerns;</li><li>legal or regulatory requirements;</li><li>third-party service changes;</li><li>technical limitations;</li><li>business or operational considerations.</li></ul>
+      <p>Where a change materially and adversely affects an active paid service, we will provide notice or remedies where required by applicable law.</p>
+      <p>Features identified as Alpha, Beta, preview, experimental, or testing features:</p>
+      <ul><li>may be incomplete or unstable;</li><li>may change without notice;</li><li>may be unavailable at times;</li><li>may be discontinued.</li></ul>
+      <p>You should not rely on experimental features as the sole location for critical information.</p>
+    </section>
+
+    <section>
+      <h2>12. Suspension and Termination</h2>
+      <p>We may restrict, suspend, or terminate access to some or all of WishLeaf if we reasonably believe that:</p>
+      <ul><li>you have seriously or repeatedly violated these Terms;</li><li>your conduct creates security, legal, financial, or operational risk;</li><li>your account is involved in fraud or serious abuse;</li><li>action is required by law or a valid legal order.</li></ul>
+      <p>Where appropriate and legally permitted, we may provide an explanation or opportunity to correct or appeal the issue.</p>
+      <p>You may stop using WishLeaf at any time.</p>
+    </section>
+
+    <section>
+      <h2>13. Account Deletion and Data Deletion</h2>
+      <p>You may request deletion of your WishLeaf account through the account-deletion feature in the app.</p>
+      <p>Under the current process:</p>
+      <ul><li>a 7-day grace period applies after you submit a deletion request;</li><li>logging back in before the scheduled deletion time may cancel the deletion request;</li><li>after the grace period, the account and associated data will enter the permanent-deletion process;</li><li>limited records may be retained where required or permitted for legal obligations, fraud prevention, transaction records, dispute handling, or security;</li><li>deleting your WishLeaf account does not cancel an app-marketplace subscription.</li></ul>
+      <p>Additional information regarding deletion, retention, and privacy rights is available in the <a class="legal-link" href="./privacy/">WishLeaf Privacy Policy</a>.</p>
+      <p>Sections of these Terms that by their nature should continue after termination remain in effect, including provisions relating to intellectual property, disclaimers, liability, and dispute resolution.</p>
+    </section>
+
+    <section>
+      <h2>14. Statutory Rights, Disclaimers, and Limitation of Liability</h2>
+      <h3>14.1 Mandatory Consumer Rights</h3>
+      <p>Nothing in these Terms excludes, restricts, or modifies any consumer right, guarantee, remedy, or liability that cannot lawfully be excluded, restricted, or modified under applicable law.</p>
+      <p>Where mandatory local consumer-protection law provides you with additional rights, those rights continue to apply.</p>
+
+      <h3>14.2 Disclaimer of Warranties</h3>
+      <p>Subject to Section 14.1 and to the maximum extent permitted by applicable law, WishLeaf is provided on an <strong>“as is”</strong> and <strong>“as available”</strong> basis.</p>
+      <p>We do not guarantee that:</p>
+      <ul><li>WishLeaf will always be available or uninterrupted;</li><li>WishLeaf will always be error-free;</li><li>all data transmission or storage will be completely secure;</li><li>AI-generated output will always be accurate, complete, current, or appropriate;</li><li>WishLeaf will achieve any particular personal, professional, educational, health, financial, or other result.</li></ul>
+      <p>You should maintain reasonable backups of information that is important to you.</p>
+      <p>You are responsible for evaluating actions you take based on AI-generated or other content provided through WishLeaf.</p>
+
+      <h3>14.3 Limitation of Liability</h3>
+      <p>To the maximum extent permitted by applicable law, DreamRove LLC and its affiliates will not be liable for indirect, incidental, special, punitive, exemplary, or consequential damages, or for loss of profits, opportunity, goodwill, or data, arising from or related to your use of or inability to use WishLeaf.</p>
+      <p>This limitation does not apply to liability that cannot lawfully be limited, including where applicable liability arising from fraud, intentional misconduct, gross negligence, or other conduct for which applicable law prohibits limitation.</p>
+      <p>To the extent liability may lawfully be limited, our aggregate liability for all claims arising out of or relating to WishLeaf will not exceed the amount you actually paid for WishLeaf during the 12 months immediately preceding the event giving rise to the claim.</p>
+      <p>Some jurisdictions do not allow certain exclusions or limitations of liability, so some of the limitations above may not apply to you.</p>
+    </section>
+
+    <section>
+      <h2>15. Governing Law and Disputes</h2>
+      <p>These Terms are governed by the laws of <strong>the State of Wyoming, United States</strong>, without regard to conflict-of-law principles.</p>
+      <p>This choice of law does not deprive you of any protection provided by mandatory consumer law that applies to you and cannot lawfully be waived by agreement.</p>
+      <p>If a dispute arises, please contact us first at the address provided in Section 17 so that we can attempt to resolve the matter informally.</p>
+      <p>If the dispute cannot be resolved informally, it may be brought before a court or other dispute-resolution body with jurisdiction under applicable law.</p>
+    </section>
+
+    <section>
+      <h2>16. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time.</p>
+      <p>If a change materially affects your rights or obligations, we may provide notice through:</p>
+      <ul><li>WishLeaf;</li><li>email;</li><li>another reasonable method.</li></ul>
+      <p>Where applicable law requires affirmative consent to a change, we will obtain that consent before the relevant change takes effect.</p>
+      <p>If you do not agree to updated Terms, you should stop using WishLeaf and may request account deletion.</p>
+    </section>
+
+    <section>
+      <h2>17. Contact Us</h2>
+      <p>Questions about these Terms may be sent to:</p>
+      <div class="contact-card">
+        <address><p><strong>DreamRove LLC</strong><br>Email: <a href="mailto:support@wishleaf.app">support@wishleaf.app</a><br>Registered Address: 30 N Gould St Ste N, Sheridan, WY 82801, USA<br>Website: <a href="https://www.wishleaf.app/">www.wishleaf.app</a></p></address>
+      </div>
+    </section>
+
+    <section>
+      <h2>18. Additional Terms for Apple App Store Users</h2>
+      <p>If you download WishLeaf through the Apple App Store, the following additional terms apply:</p>
+      <ol><li>These Terms are between you and DreamRove LLC, not Apple. DreamRove LLC, not Apple, is responsible for WishLeaf and its content.</li><li>Apple has no obligation to provide maintenance or support services for WishLeaf.</li><li>If WishLeaf fails to conform to an applicable warranty, you may notify Apple. Where applicable, Apple may refund the purchase price paid for the application itself. To the maximum extent permitted by applicable law, Apple has no other warranty obligation with respect to WishLeaf.</li><li>DreamRove LLC, not Apple, is responsible for addressing claims relating to WishLeaf, including product-liability, regulatory, consumer-protection, and intellectual-property claims.</li><li>You represent that you are not located in a country or region subject to a U.S. government embargo or designated by the U.S. government as supporting terrorism, and that you are not listed on a U.S. government prohibited or restricted-party list.</li><li>You must comply with applicable third-party terms when using WishLeaf, including terms relating to your mobile network or device services.</li><li>Apple and its subsidiaries are third-party beneficiaries of this Section 18 and may enforce these provisions against you.</li></ol>
+    </section>
+  </main>
+
+  <footer>© 2026 DreamRove LLC. · <a href="./privacy/">Privacy Policy</a> · <a href="mailto:support@wishleaf.app">Contact support</a></footer>
+</body>
+</html>

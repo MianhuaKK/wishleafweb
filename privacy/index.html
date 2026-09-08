@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WishLeaf Privacy Policy">
+  <meta name="theme-color" content="#2F4533">
+  <title>Privacy Policy · WishLeaf</title>
+  <link rel="icon" href="./images/clover.svg" type="image/svg+xml">
+  <style>
+    @font-face {
+      font-family: "Fraunces";
+      src: url("./font/web/Fraunces-latin.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Inter Tight";
+      src: url("./font/web/InterTight-regular-latin.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+    :root {
+      color-scheme: light;
+      --forest: #2f4533;
+      --forest-dark: #26382a;
+      --paper: #f6f1e6;
+      --ink: #29332a;
+      --muted: #6d776c;
+      --sage: #b7bca3;
+      --rule: rgba(47, 69, 51, 0.16);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+    }
+    a { color: inherit; }
+    .topbar {
+      background: var(--forest);
+      color: #fcf9f1;
+      border-bottom: 1px solid rgba(252, 249, 241, 0.12);
+    }
+    .topbar-inner {
+      width: min(100% - 40px, 960px);
+      min-height: 78px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .brand img { width: auto; height: 28px; }
+    .brand span {
+      font: 500 20px/1 "Fraunces", Georgia, serif;
+      letter-spacing: -0.3px;
+    }
+    .back {
+      margin-left: auto;
+      color: #d8decb;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    .back:hover, .back:focus-visible { color: #fff; text-decoration: underline; }
+    .hero {
+      background: var(--forest);
+      color: #fcf9f1;
+      padding: 70px 20px 92px;
+      text-align: center;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--sage);
+      font: italic 13px/1.4 "Fraunces", Georgia, serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font: 500 clamp(42px, 7vw, 66px)/1.06 "Fraunces", Georgia, serif;
+      letter-spacing: -0.035em;
+    }
+    .dates {
+      margin: 22px 0 0;
+      color: #d8decb;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+    .page {
+      width: min(100% - 40px, 820px);
+      margin: -38px auto 72px;
+      padding: clamp(30px, 6vw, 64px);
+      position: relative;
+      background: #fffdf8;
+      border: 1px solid rgba(47, 69, 51, 0.1);
+      border-radius: 22px;
+      box-shadow: 0 24px 65px rgba(38, 56, 42, 0.12);
+    }
+    .intro {
+      margin-top: 0;
+      color: #465247;
+      font: 400 clamp(20px, 3vw, 24px)/1.55 "Fraunces", Georgia, serif;
+    }
+    h2 {
+      margin: 52px 0 13px;
+      padding-top: 4px;
+      color: var(--forest-dark);
+      font: 600 clamp(25px, 4vw, 31px)/1.24 "Fraunces", Georgia, serif;
+      letter-spacing: -0.02em;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 42px;
+      height: 2px;
+      margin-top: 13px;
+      background: #9dac96;
+    }
+    h3 {
+      margin: 30px 0 8px;
+      color: var(--forest-dark);
+      font: 650 19px/1.35 "Fraunces", Georgia, serif;
+    }
+    p { margin: 10px 0 16px; }
+    ul {
+      margin: 10px 0 20px;
+      padding-left: 1.3rem;
+    }
+    li { margin: 5px 0; padding-left: 0.25rem; }
+    li::marker { color: #778b73; }
+    address { font-style: normal; }
+    .contact-card {
+      margin-top: 18px;
+      padding: 20px 22px;
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+      background: rgba(183, 188, 163, 0.12);
+    }
+    .contact-card p { margin: 0; }
+    .contact-card a { color: #315d3a; font-weight: 700; }
+    .table-wrap {
+      margin: 22px 0 28px;
+      overflow-x: auto;
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+    }
+    table {
+      width: 100%;
+      min-width: 650px;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    th, td {
+      padding: 14px 16px;
+      vertical-align: top;
+      text-align: left;
+      border-bottom: 1px solid var(--rule);
+    }
+    th { background: rgba(183, 188, 163, 0.18); color: var(--forest-dark); }
+    tr:last-child td { border-bottom: 0; }
+    footer {
+      background: var(--forest-dark);
+      color: #b7c1b2;
+      padding: 28px 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+    footer a { color: #d8decb; }
+    @media (max-width: 600px) {
+      body { font-size: 15px; }
+      .topbar-inner { width: min(100% - 30px, 960px); min-height: 68px; }
+      .hero { padding: 52px 18px 72px; }
+      .page { width: calc(100% - 24px); margin-top: -28px; border-radius: 16px; }
+      h2 { margin-top: 42px; }
+      .back span { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./index.html" aria-label="WishLeaf home">
+        <img src="./images/clover.svg" alt="">
+        <span>WishLeaf</span>
+      </a>
+      <a class="back" href="./index.html" aria-label="Back to WishLeaf home">← <span>Back to WishLeaf</span></a>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="page-title">
+    <p class="eyebrow">Your trust matters</p>
+    <h1 id="page-title">Privacy Policy</h1>
+    <p class="dates">Effective Date: September 8, 2026<br>Last Updated: September 8, 2026</p>
+  </section>
+
+  <main class="page">
+    <p class="intro">WishLeaf respects your privacy.</p>
+    <p>This Privacy Policy explains how WishLeaf collects, uses, stores, shares, and protects personal information when you use WishLeaf, as well as the choices and privacy rights that may be available to you.</p>
+    <p>This Policy applies to the WishLeaf mobile application, the WishLeaf website, and related services operated by us.</p>
+
+    <section>
+      <h2>1. Who We Are</h2>
+      <p>WishLeaf is operated by DreamRove LLC, a company established in the United States.</p>
+      <div class="contact-card">
+        <address>
+          <p><strong>Application:</strong> WishLeaf<br>
+          <strong>Operator:</strong> DreamRove LLC<br>
+          <strong>Contact Email:</strong> <a href="mailto:support@wishleaf.app">support@wishleaf.app</a><br>
+          <strong>Registered Address:</strong> 30 N Gould St Ste N, Sheridan, WY 82801, USA</p>
+        </address>
+      </div>
+      <p>If you have questions, requests, or complaints regarding this Privacy Policy or our handling of personal information, you may contact us using the information above.</p>
+    </section>
+
+    <section>
+      <h2>2. Information We Collect</h2>
+      <p>We process personal information only to the extent reasonably necessary to provide, maintain, secure, and operate WishLeaf.</p>
+
+      <h3>2.1 Account and Profile Information</h3>
+      <p>When you create or use a WishLeaf account, we may process:</p>
+      <ul>
+        <li>your email address;</li><li>your unique account identifier;</li><li>the name or nickname you provide;</li><li>pronouns;</li><li>time zone;</li><li>language, theme, and other app preferences;</li><li>registration, login, and account status information.</li>
+      </ul>
+      <p>If you choose to sign in with Apple or Google, we may receive account identifiers and limited profile information provided by those services based on your authorization, such as your email address or name.</p>
+      <p>Account authentication is handled through our authentication service provider. WishLeaf does not store your password in plain text.</p>
+
+      <h3>2.2 Content You Create or Save</h3>
+      <p>To provide WishLeaf’s core features, we may store content that you create, save, or generate while using the service, including:</p>
+      <ul>
+        <li>tasks, subtasks, and task completion records;</li><li>wishes, wish paths, and milestones;</li><li>notes and records associated with your wishes;</li><li>AI conversations and related chat history;</li><li>text you submit to AI-powered features;</li><li>Daily Reflection content, notes, observations, and next-day messages;</li><li>weekly reports and related content;</li><li>focus activity records;</li><li>plant growth, watering, and garden records;</li><li>your selections, acceptance, or adjustments of AI-generated suggestions;</li><li>feedback and issue descriptions you submit to customer support.</li>
+      </ul>
+      <p>This content may contain personal information that you choose to provide.</p>
+
+      <h3>2.3 Usage and Service Data</h3>
+      <p>To operate WishLeaf, manage feature usage limits, maintain service reliability, and prevent abuse, we may process:</p>
+      <ul>
+        <li>feature usage information;</li><li>AI feature usage frequency and volume;</li><li>task completion activity;</li><li>wish and milestone progress;</li><li>focus activity and duration;</li><li>the type of AI feature used and related technical records;</li><li>request timestamps, error states, and service logs;</li><li>app settings and feature states;</li><li>usage of free and paid feature allowances;</li><li>subscription status and related entitlements.</li>
+      </ul>
+      <p>This information is used to provide, secure, and maintain WishLeaf. We do not use it to build profiles for third-party targeted advertising.</p>
+
+      <h3>2.4 Device and Notification Information</h3>
+      <p>If you enable push notifications, we may process information needed to deliver those notifications, including:</p>
+      <ul>
+        <li>push notification device tokens;</li><li>notification preference status;</li><li>device platform and locale where needed for delivery;</li><li>technical information related to notification delivery.</li>
+      </ul>
+      <p>You can disable WishLeaf notifications at any time through your device settings.</p>
+      <p>WishLeaf’s core features do not currently require access to your contacts, text messages, photo library, or precise location.</p>
+
+      <h3>2.5 Security and Abuse-Prevention Information</h3>
+      <p>To protect WishLeaf, prevent fraud and account abuse, and detect attempts to improperly obtain or bypass free usage allowances, we may process necessary account and technical signals and generate hashed or similar identifiers used to identify repeated or abnormal usage patterns.</p>
+      <p>We use this information only for purposes such as:</p>
+      <ul><li>account and service security;</li><li>free and paid usage-limit management;</li><li>fraud and abuse prevention;</li><li>investigation of abnormal activity.</li></ul>
+      <p>We do not use these identifiers for advertising or third-party advertising profiles.</p>
+
+      <h3>2.6 Payment and Subscription Information</h3>
+      <p>In-app purchases and subscriptions for WishLeaf are processed through the Apple App Store, Google Play, or another applicable app marketplace.</p>
+      <p>WishLeaf does not directly collect or store your full payment card number, bank account number, or payment card security code.</p>
+      <p>To verify and manage subscriptions, we may receive information from app marketplaces or subscription-management providers, including:</p>
+      <ul><li>whether you have made a purchase or subscribed;</li><li>the type of subscription or product;</li><li>current subscription status;</li><li>subscription expiration or renewal information;</li><li>receipts, transaction identifiers, or other purchase-status information necessary for subscription verification.</li></ul>
+    </section>
+
+    <section>
+      <h2>3. Sensitive Information and Free-Form Content</h2>
+      <p>WishLeaf does not require you to provide government identification numbers, bank account information, medical records, or similar highly sensitive information in order to use its core features.</p>
+      <p>However, WishLeaf allows you to freely enter text in features such as tasks, wishes, notes, Daily Reflection, and AI conversations.</p>
+      <p>Information you voluntarily provide may therefore relate to:</p>
+      <ul><li>physical health;</li><li>mental or emotional well-being;</li><li>personal habits;</li><li>relationships;</li><li>work or education;</li><li>other private aspects of your life.</li></ul>
+      <p>Please provide only information that you are comfortable having processed for the relevant WishLeaf feature.</p>
+      <p>In particular, when using AI-powered features, please avoid submitting information that is not necessary for your request, such as:</p>
+      <ul><li>government identification numbers;</li><li>bank account or payment card information;</li><li>passwords or authentication credentials;</li><li>complete medical records;</li><li>other unnecessary highly sensitive personal information.</li></ul>
+    </section>
+
+    <section>
+      <h2>4. How We Use Your Information</h2>
+      <h3>4.1 Providing WishLeaf’s Core Features</h3>
+      <p>We use necessary information to:</p>
+      <ul><li>create and manage your account;</li><li>create and manage tasks;</li><li>create, display, and progress wishes and milestones;</li><li>save daily records and reflections;</li><li>record focus activity;</li><li>provide plant-growth and garden features;</li><li>save and synchronize account data;</li><li>restore your content and settings across supported devices;</li><li>display relevant activity and history.</li></ul>
+
+      <h3>4.2 Providing AI-Powered Features</h3>
+      <p>WishLeaf includes AI-powered features such as:</p>
+      <ul><li>AI conversations;</li><li>task suggestions;</li><li>task breakdowns;</li><li>plan adjustments after setbacks;</li><li>wish planning;</li><li>wish path and milestone generation;</li><li>daily planning;</li><li>Daily Reflection;</li><li>weekly reports;</li><li>other features clearly identified as AI-powered.</li></ul>
+      <p>When you actively use an AI-powered feature, we may send to the relevant AI service provider:</p>
+      <ul><li>the content you submit for that request; and</li><li>contextual information reasonably necessary to perform the requested feature.</li></ul>
+      <p>Depending on the feature, this context may include:</p>
+      <ul><li>related tasks;</li><li>wishes and wish descriptions;</li><li>current or relevant milestones;</li><li>recent activity;</li><li>daily records or notes;</li><li>relevant conversation history;</li><li>other WishLeaf content reasonably necessary to generate the requested result.</li></ul>
+      <p>We do not automatically send all content in your WishLeaf account to an AI service provider simply because you use one AI-powered feature.</p>
+      <p>Where required by applicable law or platform rules, we provide appropriate disclosure and obtain any required permission before personal information is shared with a third-party AI service.</p>
+
+      <h3>4.3 Managing Free and Paid Usage Limits</h3>
+      <p>We may process necessary AI and feature usage information to:</p>
+      <ul><li>determine whether a feature is currently available to your account;</li><li>manage free and paid usage allowances;</li><li>prevent repeated claims or circumvention of free allowances;</li><li>prevent malicious or automated abuse;</li><li>maintain stable and fair operation of WishLeaf.</li></ul>
+
+      <h3>4.4 Sending Notifications</h3>
+      <p>If you enable relevant notifications, we may send you:</p>
+      <ul><li>task reminders;</li><li>Daily Reflection-related notifications;</li><li>plant growth or harvest notifications;</li><li>weekly review notifications;</li><li>notifications related to features you have enabled;</li><li>necessary account or service communications.</li></ul>
+      <p>You can manage optional notifications through WishLeaf or your device settings.</p>
+
+      <h3>4.5 Protecting Security and Service Reliability</h3>
+      <p>We may use necessary information to:</p>
+      <ul><li>diagnose errors;</li><li>monitor service reliability;</li><li>detect abnormal requests;</li><li>prevent fraud and abuse;</li><li>protect accounts and systems;</li><li>investigate violations of our Terms of Service;</li><li>comply with applicable legal obligations.</li></ul>
+
+      <h3>4.6 Improving WishLeaf</h3>
+      <p>We may use aggregated, statistical, or appropriately de-identified information to understand:</p>
+      <ul><li>overall feature usage;</li><li>whether product flows are operating correctly;</li><li>which features may need improvement;</li><li>service performance and reliability.</li></ul>
+      <p>We do not build cross-service advertising profiles for third-party advertising purposes.</p>
+
+      <h3>4.7 Legal Bases Where Required</h3>
+      <p>Where applicable law requires us to identify a legal basis for processing personal information, we generally rely on one or more of the following:</p>
+      <ul><li>processing necessary to provide WishLeaf or a feature you request;</li><li>your consent, where we ask for it;</li><li>our legitimate interests in operating, securing, maintaining, and improving WishLeaf, where permitted by law;</li><li>compliance with applicable legal obligations.</li></ul>
+      <p>The applicable basis may depend on the information involved, the feature you use, and the law that applies to you.</p>
+    </section>
+
+    <section>
+      <h2>5. Who We Share Information With</h2>
+      <p>We do not sell or rent your personal information.</p>
+      <p>We do not disclose your personal information to third parties for cross-context behavioral or third-party targeted advertising.</p>
+      <p>To operate WishLeaf, we may share information that is reasonably necessary with service providers such as:</p>
+      <div class="table-wrap" role="region" aria-label="Service providers" tabindex="0">
+        <table>
+          <thead><tr><th>Service Provider</th><th>Purpose</th><th>Information That May Be Processed</th></tr></thead>
+          <tbody>
+            <tr><td>Supabase</td><td>Authentication, database hosting, and cloud infrastructure</td><td>Account information, user content, and related service data</td></tr>
+            <tr><td>OpenAI</td><td>Certain AI-powered features</td><td>AI request content and context reasonably necessary to perform the requested feature</td></tr>
+            <tr><td>Google Gemini</td><td>Certain AI-powered features</td><td>AI request content and context reasonably necessary to perform the requested feature</td></tr>
+            <tr><td>Apple</td><td>Sign in with Apple, app distribution, and in-app purchases</td><td>Login identifiers, authorization information, transaction and subscription status</td></tr>
+            <tr><td>Google</td><td>Google sign-in, app distribution, and in-app purchases</td><td>Login identifiers, authorization information, transaction and subscription status</td></tr>
+            <tr><td>RevenueCat</td><td>Subscription entitlement management and verification</td><td>Subscription status, product information, and transaction or receipt-related identifiers</td></tr>
+            <tr><td>APNs / FCM and related push infrastructure</td><td>Push notification delivery</td><td>Device tokens and information necessary to deliver notifications</td></tr>
+            <tr><td>Sentry</td><td>Error monitoring, crash reporting, and diagnostics</td><td>Error reports, device and app information, technical logs, and limited user or request context where included in an error event</td></tr>
+            <tr><td>Axiom</td><td>Logging, observability, diagnostics, and service reliability</td><td>Technical logs, request metadata, error information, service events, and limited account or user identifiers where included in logs</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We provide service providers only with information reasonably necessary for the relevant service.</p>
+      <p>We take reasonable steps to select service providers that maintain appropriate privacy and security protections, and we use applicable contractual terms and other safeguards designed to require personal information shared with them to be handled consistently with this Privacy Policy and applicable law.</p>
+      <p>Service providers may maintain their own privacy policies governing information they independently receive from you, such as information provided directly to Apple or Google in connection with an app-store account or payment.</p>
+      <p>We may also disclose personal information where reasonably necessary to:</p>
+      <ul><li>comply with applicable law, legal process, or an enforceable government request;</li><li>protect the rights, safety, and security of WishLeaf, our users, or others;</li><li>investigate fraud, abuse, or security incidents;</li><li>establish, exercise, or defend legal claims;</li><li>complete a merger, acquisition, financing, reorganization, sale, or transfer of all or part of our business, subject to applicable legal requirements.</li></ul>
+      <p>If WishLeaf later adds a significant service provider that processes personal information, we may update this Privacy Policy and related disclosures as appropriate.</p>
+    </section>
+
+    <section>
+      <h2>6. Additional Information About AI Services</h2>
+      <p>Certain WishLeaf features rely on third-party artificial intelligence services.</p>
+      <p>WishLeaf sends information to an AI service provider only when reasonably necessary to perform the AI-powered feature you are using.</p>
+      <p>For example, if you ask WishLeaf to create a daily action plan based on one of your wishes, the request may include:</p>
+      <ul><li>the relevant wish;</li><li>your current milestone;</li><li>existing related tasks;</li><li>recent activity relevant to the requested plan.</li></ul>
+      <p>Information sent to an AI provider may therefore include more than the final sentence or prompt you entered when additional context is needed to perform the feature.</p>
+      <p>WishLeaf does not automatically send all of your tasks, all chat history, or your entire account history to an AI provider simply because you use one AI-powered feature.</p>
+      <p>The specific AI provider used may vary depending on the feature, technical requirements, model availability, reliability, or service configuration.</p>
+    </section>
+
+    <section>
+      <h2>7. International Data Processing and Transfers</h2>
+      <p>WishLeaf is operated by DreamRove LLC, a United States company.</p>
+      <p>We and our service providers may store or process personal information in the United States and other countries or regions where we or those providers operate.</p>
+      <p>As a result, your personal information may be processed outside the country or region where you live, and the privacy or data-protection laws in those locations may differ from those in your jurisdiction.</p>
+      <p>Where required by applicable law, we take reasonable steps designed to protect personal information transferred across borders, including through appropriate contractual, organizational, or technical safeguards where applicable.</p>
+      <p>We may update this Privacy Policy if our data-processing arrangements materially change.</p>
+    </section>
+
+    <section>
+      <h2>8. Information Security</h2>
+      <p>We use reasonable technical and organizational safeguards designed to protect personal information, including:</p>
+      <ul><li>HTTPS/TLS and similar technologies for network transmission;</li><li>professional authentication and cloud infrastructure services;</li><li>appropriate handling of authentication credentials;</li><li>access-control and permission measures;</li><li>reasonable restrictions on access to personal information;</li><li>technical logging and monitoring used to detect abnormal activity, security issues, and service errors.</li></ul>
+      <p>However, no internet transmission, electronic storage system, or information system can be guaranteed to be completely secure.</p>
+      <p>If a personal-information security incident occurs and applicable law requires notification, we will take appropriate steps and notify affected users and relevant authorities where required.</p>
+    </section>
+
+    <section>
+      <h2>9. Data Retention and Account Deletion</h2>
+      <h3>9.1 Data Retention</h3>
+      <p>We retain personal information only for as long as reasonably necessary to:</p>
+      <ul><li>provide WishLeaf;</li><li>maintain your account;</li><li>preserve content you choose to keep;</li><li>protect security and prevent fraud or abuse;</li><li>manage subscriptions, transactions, and disputes;</li><li>establish or defend legal claims;</li><li>comply with applicable legal obligations.</li></ul>
+      <p>Generally, while your account remains active, we retain content you choose to save, such as tasks, wishes, chat history, Daily Reflection content, plant-growth data, and related account information.</p>
+
+      <h3>9.2 Account Deletion</h3>
+      <p>You may request deletion of your WishLeaf account through the account-deletion feature in the app.</p>
+      <p>WishLeaf currently provides a 7-day deletion grace period.</p>
+      <p>During this grace period, logging back into your account may cancel the deletion request.</p>
+      <p>After the grace period ends, we will begin deleting or de-identifying account-related personal information and user content that we no longer need to retain, including associated:</p>
+      <ul><li>wishes;</li><li>milestones;</li><li>tasks;</li><li>daily records;</li><li>chat content;</li><li>plant and growth data;</li><li>other related historical content.</li></ul>
+      <p>Certain limited information may be retained where reasonably necessary for:</p>
+      <ul><li>fraud prevention and service security;</li><li>legal or regulatory obligations;</li><li>financial, transaction, or dispute handling;</li><li>prevention or investigation of serious abuse;</li><li>normal backup and disaster-recovery rotation;</li><li>records independently retained by Apple, Google, RevenueCat, or other service providers under their own legal obligations.</li></ul>
+      <p>Information remaining temporarily in backup systems will not be used to restore a deleted account for ordinary continued use and will be deleted or overwritten through normal backup rotation.</p>
+
+      <h3>9.3 Account Deletion Does Not Cancel Store Subscriptions</h3>
+      <p>Deleting your WishLeaf account does not automatically cancel a subscription purchased through the Apple App Store or Google Play.</p>
+      <p>If you have an active auto-renewing subscription, you should manage or cancel it through the applicable app marketplace.</p>
+    </section>
+
+    <section>
+      <h2>10. Your Privacy Rights</h2>
+      <p>Depending on where you live and the laws that apply to WishLeaf’s processing of your information, you may have some or all of the following rights:</p>
+      <ul><li>request access to personal information we hold about you;</li><li>request correction of inaccurate or incomplete information;</li><li>request deletion of certain personal information;</li><li>request a copy of certain personal information;</li><li>withdraw consent where processing is based on your consent;</li><li>request restriction of or object to certain processing where applicable law provides such a right;</li><li>manage optional features and notification settings;</li><li>submit a complaint regarding our handling of personal information;</li><li>contact a privacy or data-protection authority with jurisdiction over you, where applicable.</li></ul>
+      <p>These rights are not absolute and may vary depending on your location, the information involved, how the information is processed, and applicable law.</p>
+      <p>Some account information and preferences can be changed directly within WishLeaf.</p>
+
+      <h3>10.1 Privacy Requests and Copies of Your Data</h3>
+      <p>If you would like to:</p>
+      <ul><li>access personal information we hold about you;</li><li>obtain a copy of relevant personal information;</li><li>correct information that cannot be changed directly in WishLeaf;</li><li>make another privacy request available to you under applicable law;</li></ul>
+      <p>please contact:</p>
+      <div class="contact-card"><p><a href="mailto:support@wishleaf.app">support@wishleaf.app</a></p></div>
+      <p>To protect your account and personal information, we may reasonably verify your identity before completing certain requests.</p>
+      <p>We will respond to verified requests within the period required by applicable law.</p>
+      <p>Nothing in this Privacy Policy is intended to limit any privacy right or protection that cannot lawfully be limited or waived.</p>
+    </section>
+
+    <section>
+      <h2>11. Children and Minors</h2>
+      <p>WishLeaf is a general productivity, planning, and personal-growth application and is not designed specifically for children.</p>
+      <p>WishLeaf is not intended for children under the age of 13, and we do not knowingly collect personal information from children under 13.</p>
+      <p>If the law where you live requires a higher age or parental or guardian authorization before you may independently consent to certain processing of personal information, those requirements apply.</p>
+      <p>If we learn that we collected personal information from a child in circumstances where we were not legally permitted to process it, we will take reasonable steps to delete the information.</p>
+      <p>If you are a parent or guardian and believe that a child has provided personal information to WishLeaf without appropriate authorization, please contact:</p>
+      <div class="contact-card"><p><a href="mailto:support@wishleaf.app">support@wishleaf.app</a></p></div>
+    </section>
+
+    <section>
+      <h2>12. What We Do Not Do</h2>
+      <p>To make WishLeaf’s data practices clearer:</p>
+      <ul><li>We do not sell your personal information.</li><li>We do not rent your personal information.</li><li>We do not disclose your personal information for third-party targeted or cross-context behavioral advertising.</li><li>We do not directly obtain or store your full bank-account or payment-card information.</li><li>We do not require access to your contacts, text messages, photo library, or precise location to provide WishLeaf’s core features.</li><li>We do not automatically send all of your WishLeaf data to an AI provider simply because you use one AI-powered feature.</li></ul>
+      <p>If WishLeaf’s data practices materially change, we will update the relevant disclosures and obtain permission or consent where required by applicable law or platform rules.</p>
+    </section>
+
+    <section>
+      <h2>13. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy as WishLeaf’s features, service providers, infrastructure, or legal obligations change.</p>
+      <p>When we do, we will update the Last Updated date at the top of this Policy.</p>
+      <p>If a change materially affects how personal information is processed, we may provide notice through:</p>
+      <ul><li>an in-app notice;</li><li>email;</li><li>a prominent notice within WishLeaf or our website;</li><li>another reasonable method.</li></ul>
+      <p>Where applicable law or platform rules require consent or another form of authorization for a new type of processing, we will obtain the required authorization before beginning that processing.</p>
+    </section>
+
+    <section>
+      <h2>14. Contact Us</h2>
+      <p>If you:</p>
+      <ul><li>have questions about this Privacy Policy;</li><li>want to access, correct, or delete personal information;</li><li>want a copy of relevant personal information;</li><li>want to make a privacy complaint;</li><li>believe personal information has been handled improperly;</li><li>believe a child may have provided personal information to WishLeaf without appropriate authorization;</li></ul>
+      <p>please contact:</p>
+      <div class="contact-card">
+        <address><p><strong>DreamRove LLC</strong><br>Email: <a href="mailto:support@wishleaf.app">support@wishleaf.app</a><br>Registered Address: 30 N Gould St Ste N, Sheridan, WY 82801, USA</p></address>
+      </div>
+      <p>We will respond as soon as reasonably practicable and within any period required by applicable law.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 DreamRove LLC. WishLeaf is developed and operated by DreamRove LLC. · <a href="./terms/">Terms of Service</a> · <a href="mailto:support@wishleaf.app">Contact support</a></footer>
+</body>
+</html>

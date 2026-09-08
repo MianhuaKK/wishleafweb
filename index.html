@@ -113,7 +113,10 @@ document.addEventListener('DOMContentLoaded', async function() {
       '<a href="#">Support</a>',
       '<a href="mailto:DreamRove@outlook.com">DreamRove@outlook.com</a>'
     );
-    template = template.replace('<a href="#">Privacy</a>', '');
+    template = template.replace(
+      '<a href="#">Privacy</a>',
+      '<a href="./terms/">Terms</a><a href="./privacy/">Privacy</a>'
+    );
 
     // Nested page bundles (iframe targets). Each ships ONCE, in the ROOT
     // document's manifest; frame srcs carry an about:blank#<uuid> marker
