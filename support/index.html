@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact WishLeaf Support for account issues, bug reports, feedback, or feature requests.">
+  <meta name="theme-color" content="#2F4533">
+  <title>WishLeaf Support</title>
+  <link rel="icon" href="./images/clover.svg" type="image/svg+xml">
+  <style>
+    @font-face {
+      font-family: "Fraunces";
+      src: url("./font/web/Fraunces-latin.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Inter Tight";
+      src: url("./font/web/InterTight-regular-latin.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+    :root {
+      color-scheme: light;
+      --forest: #2f4533;
+      --paper: #f6f1e6;
+      --ink: #29332a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    .topbar {
+      background: var(--forest);
+      color: #fcf9f1;
+      border-bottom: 1px solid rgba(252, 249, 241, 0.12);
+    }
+    .topbar-inner {
+      width: min(100% - 40px, 960px);
+      min-height: 78px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: inherit;
+      text-decoration: none;
+    }
+    .brand img { height: 28px; }
+    .brand span {
+      font: 500 20px/1 "Fraunces", Georgia, serif;
+      letter-spacing: -0.3px;
+    }
+    .back {
+      margin-left: auto;
+      color: #d8decb;
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .back:hover, .back:focus-visible { color: #fff; text-decoration: underline; }
+    .hero {
+      padding: 70px 20px 92px;
+      background: var(--forest);
+      color: #fcf9f1;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font: 500 clamp(42px, 7vw, 66px)/1.06 "Fraunces", Georgia, serif;
+      letter-spacing: -0.035em;
+    }
+    .page {
+      width: min(100% - 40px, 820px);
+      margin: -38px auto 72px;
+      padding: clamp(30px, 6vw, 64px);
+      position: relative;
+      background: #fffdf8;
+      border: 1px solid rgba(47, 69, 51, 0.1);
+      border-radius: 22px;
+      box-shadow: 0 24px 65px rgba(38, 56, 42, 0.12);
+    }
+    .intro {
+      margin: 0 0 18px;
+      color: #465247;
+      font: 400 clamp(20px, 3vw, 24px)/1.55 "Fraunces", Georgia, serif;
+    }
+    p { margin: 0 0 20px; }
+    .contact-card {
+      margin-top: 24px;
+      padding: 20px 22px;
+      border: 1px solid rgba(47, 69, 51, 0.16);
+      border-radius: 14px;
+      background: rgba(183, 188, 163, 0.12);
+    }
+    .contact-card p { margin: 0; }
+    .contact-card a { color: #315d3a; font-weight: 700; overflow-wrap: anywhere; }
+    footer {
+      margin-top: auto;
+      padding: 28px 20px;
+      background: #26382a;
+      color: #b7c1b2;
+      text-align: center;
+      font-size: 12px;
+    }
+    footer a { color: #d8decb; }
+    @media (max-width: 600px) {
+      .topbar-inner { width: min(100% - 30px, 960px); min-height: 68px; }
+      .hero { padding: 52px 18px 72px; }
+      .page { width: calc(100% - 24px); margin-top: -28px; border-radius: 16px; }
+      .back span { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./index.html" aria-label="WishLeaf home">
+        <img src="./images/clover.svg" alt="">
+        <span>WishLeaf</span>
+      </a>
+      <a class="back" href="./index.html" aria-label="Back to WishLeaf home">← <span>Back to WishLeaf</span></a>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="page-title">
+    <h1 id="page-title">WishLeaf Support</h1>
+  </section>
+
+  <main class="page">
+    <p class="intro">Need help with WishLeaf?</p>
+    <p>For account issues, bug reports, feedback, or feature requests, contact:</p>
+    <div class="contact-card">
+      <p><strong>Email:</strong> <a href="mailto:support@wishleaf.app">support@wishleaf.app</a></p>
+    </div>
+  </main>
+
+  <footer>© 2026 DreamRove LLC. WishLeaf is developed and operated by DreamRove LLC. · <a href="./terms/">Terms of Service</a> · <a href="./privacy/">Privacy Policy</a></footer>
+</body>
+</html>
