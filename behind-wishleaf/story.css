@@ -15,9 +15,12 @@
 .story-rule::after{content:"";height:1px;flex:1;background:rgb(43 42 36 / 13%)}
 .story-rule:not(:first-child){margin-top:74px}
 .story-last{font:italic 500 clamp(23px,3vw,30px)/1.5 Fraunces,Georgia,serif!important;color:var(--leaf);margin-top:52px!important}
+.story-thanks{width:min(100% - 40px,720px);margin:0 auto 72px;padding:32px 0 0;border-top:1px solid rgb(43 42 36 / 13%)}
+.story-thanks h2{font-size:clamp(26px,3vw,34px);margin-bottom:18px}
+.story-thanks p{max-width:640px;font-size:16px;line-height:1.8;color:var(--muted)}
 .story-end{display:flex;align-items:center;justify-content:center;gap:17px;padding:0 20px 90px;color:var(--leaf)}
 .story-end::before,.story-end::after{content:"";width:55px;height:1px;background:rgb(43 42 36 / 18%)}
 .story-end span{font-size:20px}
 .story-footer nav{flex-wrap:wrap;justify-content:flex-end}
 @media(max-width:800px){.story-hero{gap:16px;grid-template-columns:minmax(0,1fr) 240px;min-height:490px}.story-photo{width:220px}.story-heading h1{font-size:clamp(46px,6vw,65px)}}
-@media(max-width:639px){.story-header{height:78px}.story-back{font-size:12px}.story-hero{display:flex;flex-direction:column;align-items:stretch;gap:38px;min-height:0;padding-block:58px 76px}.story-heading .eyebrow{font-size:10px;margin-bottom:22px}.story-heading h1{font-size:clamp(43px,11vw,64px)}.story-subtitle{margin-top:27px;font-size:21px}.story-photo{width:min(65vw,255px)}.story-article{padding-top:0;padding-bottom:35px}.story-article p{font-size:16px;line-height:1.8;margin-bottom:24px}.story-rule{font-size:10px;margin-bottom:30px}.story-rule:not(:first-child){margin-top:58px}.story-last{margin-top:40px!important}.story-end{padding-bottom:70px}.story-footer nav{justify-content:space-between;gap:12px}}
+@media(max-width:639px){.story-header{height:78px}.story-back{font-size:12px}.story-hero{display:flex;flex-direction:column;align-items:stretch;gap:38px;min-height:0;padding-block:58px 76px}.story-heading .eyebrow{font-size:10px;margin-bottom:22px}.story-heading h1{font-size:clamp(43px,11vw,64px)}.story-subtitle{margin-top:27px;font-size:21px}.story-photo{width:min(65vw,255px)}.story-article{padding-top:0;padding-bottom:35px}.story-article p{font-size:16px;line-height:1.8;margin-bottom:24px}.story-rule{font-size:10px;margin-bottom:30px}.story-rule:not(:first-child){margin-top:58px}.story-last{margin-top:40px!important}.story-thanks{margin-bottom:54px}.story-end{padding-bottom:70px}.story-footer nav{justify-content:space-between;gap:12px}}
