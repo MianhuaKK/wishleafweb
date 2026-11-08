@@ -1,10 +1,98 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#FCF9F1"><meta name="description" content="Turn your wishes into small daily steps. Grow at your own pace with WishLeaf."><title>WishLeaf — A little closer, every day.</title><link rel="icon" href="./images/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css"><script src="./script.js" defer></script></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#FCF9F1">
+  <meta name="description" content="Plan your day. Make progress your way. WishLeaf helps you find doable daily steps, adapt your plan, and grow a quiet garden with your progress.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <title>WishLeaf — Plan your day. Make progress your way.</title>
+  <link rel="canonical" href="https://wishleaf.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WishLeaf">
+  <meta property="og:title" content="WishLeaf — Plan your day. Make progress your way.">
+  <meta property="og:description" content="Plan your day. Make progress your way. WishLeaf helps you find doable daily steps, adapt your plan, and grow a quiet garden with your progress.">
+  <meta property="og:url" content="https://wishleaf.app/">
+  <meta property="og:image" content="https://wishleaf.app/images/demo_plant.png">
+  <meta property="og:image:alt" content="A plant growing in WishLeaf's quiet garden">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="WishLeaf — Plan your day. Make progress your way.">
+  <meta name="twitter:description" content="Plan your day. Make progress your way. WishLeaf helps you find doable daily steps, adapt your plan, and grow a quiet garden with your progress.">
+  <meta name="twitter:image" content="https://wishleaf.app/images/demo_plant.png">
+  <meta name="twitter:image:alt" content="A plant growing in WishLeaf's quiet garden">
+  <link rel="icon" href="./images/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://wishleaf.app/#organization",
+        "name": "DreamRove LLC",
+        "url": "https://wishleaf.app/",
+        "email": "support@wishleaf.app"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://wishleaf.app/#website",
+        "name": "WishLeaf",
+        "url": "https://wishleaf.app/",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://wishleaf.app/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://wishleaf.app/#webpage",
+        "url": "https://wishleaf.app/",
+        "name": "WishLeaf — Plan your day. Make progress your way.",
+        "description": "Plan your day. Make progress your way. WishLeaf helps you find doable daily steps, adapt your plan, and grow a quiet garden with your progress.",
+        "inLanguage": "en",
+        "isPartOf": { "@id": "https://wishleaf.app/#website" },
+        "mainEntity": { "@id": "https://wishleaf.app/#app" }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://wishleaf.app/#app",
+        "name": "WishLeaf",
+        "url": "https://wishleaf.app/",
+        "description": "WishLeaf helps you plan your day with clear, doable steps. Adjust your plan as life changes, and make progress in a way that works for you.",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "iOS",
+        "downloadUrl": "https://apps.apple.com/us/app/wishleaf/id6762046509",
+        "image": "https://wishleaf.app/images/tab1.png",
+        "publisher": { "@id": "https://wishleaf.app/#organization" },
+        "mainEntityOfPage": { "@id": "https://wishleaf.app/#webpage" }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="./analytics.css">
+  <script src="./analytics-config.js" defer></script>
+  <script src="./analytics.js" defer></script>
+  <link rel="stylesheet" href="./navigation.css">
+  <script src="./navigation.js" defer></script>
+</head>
 <body><a class="skip" href="#main">Skip to content</a>
-<header class="container"><a class="brand" href="./"><img src="./images/icon.svg" alt="" width="28" height="28">WishLeaf<sup>®</sup></a><span>A little room to grow.</span></header>
+<header class="wl-header">
+  <a class="wl-brand" href="./" aria-label="WishLeaf home">
+    <img src="./images/icon.svg" alt="" width="28" height="28">WishLeaf<sup>®</sup>
+  </a>
+  <nav class="wl-nav" aria-label="Main navigation">
+    <details class="feature-menu">
+      <summary>Features</summary>
+      <div class="feature-menu-panel">
+        <a href="./features/action-start/">Find your start</a>
+        <a href="./features/goal-progress/">See your progress</a>
+      </div>
+    </details>
+    <a class="wl-download" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" data-app-store data-cta-location="navigation">Get WishLeaf <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
 <main id="main">
-<section class="hero container"><div class="hero-copy"><p class="eyebrow">● &nbsp; A PAPER GARDEN FOR YOUR WISHES</p><h1>Big wishes.<br>Small steps,<br><em>every day.</em></h1><p class="description">WishLeaf is a goal planner that helps you turn big goals into clear paths and small, doable steps for today. Adjust your plan as life changes, and keep moving at your own pace.</p><div class="download-cta"><a class="store" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" aria-label="Download WishLeaf on the App Store"><span class="apple" aria-hidden="true">●</span><span><small>Download on the</small><strong>App Store</strong></span></a><a class="qr-link" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" aria-label="Open WishLeaf on the App Store"><img src="./images/qr-code.png" alt="QR code to download WishLeaf from the App Store" width="92" height="92"></a></div><p class="availability">Scan or tap to download. For your wishes, at your pace.</p></div><div class="hero-art"><div class="orbit"></div><div class="orbit outline"></div><span class="spark one">✧</span><span class="spark two">✦</span><div class="phone"><div class="screen"><img src="./images/tab1.png" alt="WishLeaf app home screen, first tab" fetchpriority="high"><img class="alternate" src="./images/tab2.png" alt="WishLeaf app home screen, second tab"><i class="island"></i></div></div><span class="hand-note">Good things take a little tending.</span></div><a class="scroll-hint" href="#wish">HOW YOUR WISH TAKES ROOT <span>↓</span></a></section>
-<section class="chapter container" id="wish"><div class="copy"><p class="eyebrow">01 / A PLACE TO BEGIN</p><h2>A big wish.<br><em>A small first step.</em></h2><p>Somewhere between “one day” and today, there’s a path you can actually follow. WishLeaf helps you find it — then brings it down to one small thing you can do next.</p><aside>Less overwhelming. More possible.</aside></div><div class="visual begin-visual" role="region" aria-roledescription="carousel" aria-label="WishLeaf goal flow">
+<section class="hero container"><div class="hero-copy"><p class="eyebrow">● &nbsp; A PAPER GARDEN FOR YOUR WISHES</p><h1>Plan your day.<br>Make progress<br><em>your way.</em></h1><p class="description">WishLeaf helps you plan your day with clear, doable steps. Adjust your plan as life changes, and make progress in a way that works for you.</p><div class="download-cta"><a class="store" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" aria-label="Download WishLeaf on the App Store" data-app-store data-cta-location="hero"><span class="apple" aria-hidden="true">●</span><span><small>Download on the</small><strong>App Store</strong></span></a><a class="qr-link" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" aria-label="Open WishLeaf on the App Store" data-app-store data-cta-location="hero"><img src="./images/qr-code.png" alt="QR code to download WishLeaf from the App Store" width="92" height="92"></a></div><p class="availability">Scan or tap to download. For your wishes, at your pace.</p></div><div class="hero-art"><div class="orbit"></div><div class="orbit outline"></div><span class="spark one">✧</span><span class="spark two">✦</span><div class="phone"><div class="screen"><img src="./images/tab1.png" alt="WishLeaf app home screen, first tab" fetchpriority="high"><img class="alternate" src="./images/tab2.png" alt="WishLeaf app home screen, second tab"><i class="island"></i></div></div><span class="hand-note">Good things take a little tending.</span></div><a class="scroll-hint" href="#wish">HOW YOUR WISH TAKES ROOT <span>↓</span></a></section>
+<section class="chapter container" id="wish"><div class="copy"><p class="eyebrow">01 / A PLACE TO BEGIN</p><h2>A plan for today.<br><em>A small first step.</em></h2><p>Somewhere between “one day” and today, there’s a path you can actually follow. WishLeaf helps you find it — then brings it down to one small thing you can do next.</p><aside>Less overwhelming. More possible.</aside></div><div class="visual begin-visual" role="region" aria-roledescription="carousel" aria-label="WishLeaf goal flow">
   <div class="begin-slide begin-goal-slide active" aria-hidden="false">
     <div class="begin-goal-card">
       <div class="begin-goal-heading"><span class="begin-goal-icon" aria-hidden="true">🎬</span><strong>Build a Content Creator Side Hustle</strong></div>
@@ -43,5 +131,5 @@
 <div class="sage-section"><section class="chapter reverse container"><div class="copy"><p class="eyebrow">02 / ROOM TO CHANGE</p><h2>Life happens.<br><em>Your plan can bend.</em></h2><p>A task feels too big. A week gets busy. The original plan stops fitting. Find a gentler way forward with suggestions, smaller steps, and a fresh approach.</p><aside>You can always begin again.</aside></div><div class="visual bubbles" role="img" aria-label="Suggest a better way, break work into a smaller step, and adjust for the next try"><div class="bubble guidance"><img src="./images/wishleaf_icon_suggestion.svg" alt=""><strong>Suggest</strong><small>A better way forward.</small></div><div class="bubble smaller"><img src="./images/wishleaf_icon_decompose.svg" alt=""><strong>Breakdown</strong><small>One smaller step.</small></div><div class="bubble fresh"><img src="./images/wishleaf_icon_failure_adjustment.svg" alt=""><strong>Adjust</strong><small>Set up the next try.</small></div></div></section></div>
 <section class="chapter container"><div class="copy"><p class="eyebrow">03 / A RHYTHM OF YOUR OWN</p><h2>A plan that grows<br><em>along with you.</em></h2><p>What you do, how you feel, and the progress you make all help shape what comes next. Your plan becomes more personal as you explore what works for you.</p><aside>A little more you, with every step.</aside></div><div class="visual loop" role="img" aria-label="Your actions provide feedback to WishLeaf, helping its next suggestions fit you better"><svg viewBox="0 0 500 400" aria-hidden="true"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#769164" stroke-width="1.5"/></marker></defs><path class="loop-path" d="M110 160 C130 40 370 40 390 160"/><path class="loop-path return" d="M390 245 C360 355 140 355 110 245"/></svg><span class="loop-label top">Listen & learn</span><span class="loop-label bottom">A next step that fits you</span><div class="node actions"><span>✓</span><strong>Your actions</strong><small>A little lived experience</small></div><div class="node plan"><span><img src="./images/wishleaf_icon_with_star.svg" alt=""></span><strong>WishLeaf’s plan</strong><small>A little thoughtful guidance</small></div><span class="loop-center">At your<br>own pace.</span></div></section>
 <div class="gold-section"><section class="chapter reverse container"><div class="copy"><p class="eyebrow">04 / SOMETHING TO GROW WITH</p><h2>Small actions.<br><em>Living reminders.</em></h2><p>While you work on your wishes, a quiet garden grows beside you. Your actions shape the water, nutrients, and sunlight each plant receives — and the way it grows.</p><aside>Progress you can see. A story that’s yours.</aside></div><div class="visual plant-visual"><div class="plant-halo"></div><span class="plant-symbol sun-symbol" aria-hidden="true"><i></i></span><span class="plant-symbol droplets-symbol" aria-hidden="true"><i></i></span><span class="plant-symbol heart-symbol" aria-hidden="true"><i></i></span><img class="plant" src="./images/demo_plant.png" alt="A WishLeaf plant with sunlight, water, and care around it" loading="lazy"><span class="caption">Growing, in your own way.</span></div></section></div>
-<section class="closing container"><img src="./images/icon.svg" alt="" width="40" height="40"><p class="eyebrow">THERE’S NO PERFECT TIME TO BEGIN</p><h2>Just a wish.<br><em>And one little step.</em></h2><p>Your paper garden is ready when you are.</p><div class="download-cta"><a class="store" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" aria-label="Download WishLeaf on the App Store"><span class="apple" aria-hidden="true">●</span><span><small>Download on the</small><strong>App Store</strong></span></a><a class="qr-link" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" aria-label="Open WishLeaf on the App Store"><img src="./images/qr-code.png" alt="QR code to download WishLeaf from the App Store" width="92" height="92" loading="lazy"></a></div></section>
-</main><footer class="container"><a class="brand" href="./"><img src="./images/icon.svg" alt="" width="20" height="20">WishLeaf</a><span>© 2026 DreamRove LLC.<br>WishLeaf is developed and operated by DreamRove LLC.</span><nav aria-label="Site navigation"><a href="./behind-wishleaf/index.html">Behind WishLeaf</a><a href="./terms/">Terms</a><a href="./privacy/">Privacy</a><a href="./support/">Support</a><a href="mailto:support@wishleaf.app">Contact</a></nav></footer></body></html>
+<section class="closing container"><img src="./images/icon.svg" alt="" width="40" height="40"><p class="eyebrow">THERE’S NO PERFECT TIME TO BEGIN</p><h2>Just a wish.<br><em>And one little step.</em></h2><p>Your paper garden is ready when you are.</p><div class="download-cta"><a class="store" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" aria-label="Download WishLeaf on the App Store" data-app-store data-cta-location="footer"><span class="apple" aria-hidden="true">●</span><span><small>Download on the</small><strong>App Store</strong></span></a><a class="qr-link" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" aria-label="Open WishLeaf on the App Store" data-app-store data-cta-location="footer"><img src="./images/qr-code.png" alt="QR code to download WishLeaf from the App Store" width="92" height="92" loading="lazy"></a></div></section>
+</main><footer class="container"><a class="brand" href="./"><img src="./images/icon.svg" alt="" width="20" height="20">WishLeaf</a><span>© 2026 DreamRove LLC.<br>WishLeaf is developed and operated by DreamRove LLC.</span><nav aria-label="Site navigation"><a href="./terms/">Terms</a><a href="./privacy/">Privacy</a><a href="./support/">Support</a><a href="mailto:support@wishleaf.app">Contact</a></nav></footer></body></html>

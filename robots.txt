@@ -1,0 +1,21 @@
+# Allow public pages to be crawled by search engines.
+User-agent: *
+Allow: /
+
+# Allow discovery in ChatGPT search.
+User-agent: OAI-SearchBot
+Allow: /
+
+# Allow Google Search
+User-agent: Googlebot
+Allow: /
+
+# Allow Gemini training and grounding
+User-agent: Google-Extended
+Allow: /
+
+# Keep training permission separate from search access.
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://wishleaf.app/sitemap.xml

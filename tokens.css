@@ -1,0 +1,44 @@
+/* Shared by the website and aligned with DESIGN_SYSTEM.md. */
+:root {
+  color-scheme: light;
+  --color-canvas: #FCF9F1;
+  --color-primary: #769164;
+  --color-ink: #2B2A24;
+  --color-blue: #B5C5D4;
+  --color-clay: #C0A99B;
+  --color-gold: #E4D296;
+  --color-sage: #B7BCA3;
+  --color-text-secondary: rgb(43 42 36 / 68%);
+  --color-text-disabled: rgb(43 42 36 / 38%);
+  --color-border: rgb(43 42 36 / 10%);
+  --color-overlay: rgb(43 42 36 / 36%);
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --shadow-card: 0 6px 20px rgb(43 42 36 / 7%);
+
+  /* Existing page styles share the same source of truth. */
+  --paper: var(--color-canvas);
+  --leaf: var(--color-primary);
+  --ink: var(--color-ink);
+  --blue: var(--color-blue);
+  --clay: var(--color-clay);
+  --gold: var(--color-gold);
+  --sage: var(--color-sage);
+  --muted: var(--color-text-secondary);
+  --line: var(--color-border);
+  --rule: var(--color-border);
+  --display: "Fraunces", Georgia, serif;
+  --ui: "Inter Tight", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+body {
+  /* A quiet paper grain, using only transparent Ink and Paper. */
+  background-image: radial-gradient(rgb(43 42 36 / 2.5%) .5px, transparent .5px);
+  background-size: 5px 5px;
+}
+
+:where(a, button, input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}

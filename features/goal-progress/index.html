@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#FCF9F1">
+  <title>Goal Progress Tracker, Goal Maps & Daily Reflection — WishLeaf</title>
+  <meta name="description" content="See the progress you've made with WishLeaf. Connect tasks to goal maps, revisit action history, and reflect on daily effort without a compulsory streak.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://wishleaf.app/features/goal-progress/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WishLeaf">
+  <meta property="og:title" content="Goal Progress Tracker, Goal Maps & Daily Reflection — WishLeaf">
+  <meta property="og:description" content="See the progress you've made with WishLeaf. Connect tasks to goal maps, revisit action history, and reflect on daily effort without a compulsory streak.">
+  <meta property="og:url" content="https://wishleaf.app/features/goal-progress/">
+  <meta property="og:image" content="https://wishleaf.app/images/demo_plant.png">
+  <meta property="og:image:alt" content="A plant growing in WishLeaf">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Goal Progress Tracker, Goal Maps & Daily Reflection — WishLeaf">
+  <meta name="twitter:description" content="See the progress you've made with WishLeaf. Connect tasks to goal maps, revisit action history, and reflect on daily effort without a compulsory streak.">
+  <meta name="twitter:image" content="https://wishleaf.app/images/demo_plant.png">
+  <meta name="twitter:image:alt" content="A plant growing in WishLeaf">
+  <link rel="icon" href="../../images/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../features.css">
+  <link rel="stylesheet" href="../demo-components.css">
+  <link rel="stylesheet" href="../progress-demo.css">
+  <script src="../demo-components.js" defer></script>
+  <script src="../daily-plan-demo.js" defer></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://wishleaf.app/features/goal-progress/#webpage",
+      "url": "https://wishleaf.app/features/goal-progress/",
+      "name": "Goal Progress Tracker, Goal Maps & Daily Reflection — WishLeaf",
+      "description": "See the progress you've made with WishLeaf. Connect tasks to goal maps, revisit action history, and reflect on daily effort without a compulsory streak.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://wishleaf.app/#website"
+      },
+      "about": {
+        "@id": "https://wishleaf.app/#app"
+      },
+      "breadcrumb": {
+        "@id": "https://wishleaf.app/features/goal-progress/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://wishleaf.app/features/goal-progress/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "WishLeaf",
+          "item": "https://wishleaf.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "See the progress you've made",
+          "item": "https://wishleaf.app/features/goal-progress/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="../../analytics.css">
+  <script src="../../analytics-config.js" defer></script>
+  <script src="../../analytics.js" defer></script>
+  <link rel="stylesheet" href="../../navigation.css">
+  <script src="../../navigation.js" defer></script>
+</head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="wl-header">
+  <a class="wl-brand" href="../../" aria-label="WishLeaf home">
+    <img src="../../images/icon.svg" alt="" width="28" height="28">WishLeaf<sup>®</sup>
+  </a>
+  <nav class="wl-nav" aria-label="Main navigation">
+    <details class="feature-menu">
+      <summary>Features</summary>
+      <div class="feature-menu-panel">
+        <a href="../../features/action-start/">Find your start</a>
+        <a href="../../features/goal-progress/" aria-current="page">See your progress</a>
+      </div>
+    </details>
+    <a class="wl-download" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" data-app-store data-cta-location="navigation">Get WishLeaf <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="page-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Let your effort leave a trace</p>
+      <h1 id="page-title">See the progress<br><em>you've made.</em></h1>
+      <p class="hero-subtitle">Goal Maps, Action History &amp; Daily Reflection</p>
+      <p class="hero-description">A checked box is one moment in a longer story. WishLeaf connects tasks with your goals, keeps a history of associated actions, and helps you look back on what you've put into the things that matter.</p>
+      <div class="hero-actions"><a class="store" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" data-download-location="hero" data-app-store data-cta-location="hero" aria-label="Download WishLeaf on the App Store"><span class="apple-mark" aria-hidden="true"></span><span><small>Download on the</small><strong>App Store</strong></span></a><a class="text-link" href="#progress-demo">Try the demo <span aria-hidden="true">↓</span></a></div>
+      <p class="note">For iPhone. Free to download, with in-app purchases.<br>Start with a goal, or begin with an everyday action.</p>
+    </div>
+    <wishleaf-progress-demo id="progress-demo" class="demo-stage" aria-label="Explore the Goals screen">
+      <div class="wld-demo-caption"><span><i></i> Goals · interactive preview</span><button type="button" class="wld-reset" data-reset aria-label="Reset goal demo">Reset ↺</button></div>
+      <div class="wlp-phone">
+        <div class="wlp-preview-base" data-preview-base>
+          <section class="wlp-goals-screen" data-screen="goals" aria-label="Goals">
+            <div class="wlp-season-bar"><span role="img" aria-label="Wish Gallery"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v15H4Zm3-3h10M2 8v9m20-9v9M8 16l3-4 3 3 2-2 2 3"/><circle cx="8" cy="9" r="1"/></svg></span><p>October · Autumn</p><span class="wlp-add" role="img" aria-label="Add goal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+            <div class="wlp-goal-list">
+              <article class="wlp-goal-card" style="--goal-color:#97AF86"><button type="button" class="wlp-goal-title" data-view="map" aria-label="Open goal map: Make room for a calmer home"><span>🪴</span><strong>Make room for a calmer home</strong></button>
+ <button type="button" data-milestone="current" class="wlp-milestone"><b aria-hidden="true">▸</b>Create a comfortable corner<span aria-hidden="true">›</span></button>
+ <div class="wlp-rhythm"><em>this week</em><i></i><span aria-label="Sample weekly activity"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8 8 0 1 0 10 10Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg></span></div>
+ <div class="wlp-card-bottom"><button type="button" data-range aria-label="Show goal date range" class="wlp-counts"><span><b data-days>20</b> Days</span><i></i><span><b data-actions>8</b> Actions</span></button><span class="wlp-coach" role="img" aria-label="AI coach"><img src="../../images/features/ai-coach.svg" alt=""></span><button type="button" data-open-plan class="wlp-plan" aria-haspopup="dialog" aria-controls="daily-plan-preview"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>Today's plan</button></div></article>
+              <article class="wlp-goal-card" style="--goal-color:#A4B2CF"><div class="wlp-goal-title"><span>💪</span><strong>Build strength, feel better</strong></div>
+ <span class="wlp-milestone"><b aria-hidden="true">▸</b>Find a rhythm that fits<span aria-hidden="true">›</span></span>
+ <div class="wlp-rhythm"><em>this week</em><i></i><span aria-label="Sample weekly activity"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8 8 0 1 0 10 10Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg></span></div>
+ <div class="wlp-card-bottom"><span class="wlp-counts"><span><b >18</b> Days</span><i></i><span><b >7</b> Actions</span></span><span class="wlp-coach" role="img" aria-label="AI coach"><img src="../../images/features/ai-coach.svg" alt=""></span><span class="wlp-plan"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>Today's plan</span></div></article>
+              <article class="wlp-goal-card" style="--goal-color:#BC8D8E"><div class="wlp-goal-title"><span>🌷</span><strong>Make time for little joys</strong></div>
+ <span class="wlp-milestone"><b aria-hidden="true">▸</b>A small moment each day<span aria-hidden="true">›</span></span>
+ <div class="wlp-rhythm"><em>this week</em><i></i><span aria-label="Sample weekly activity"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8 8 0 1 0 10 10Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg></span></div>
+ <div class="wlp-card-bottom"><span class="wlp-counts"><span><b >12</b> Days</span><i></i><span><b >5</b> Actions</span></span><span class="wlp-coach" role="img" aria-label="AI coach"><img src="../../images/features/ai-coach.svg" alt=""></span><span class="wlp-plan"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>Today's plan</span></div></article>
+            </div>
+            <nav class="wlp-tabbar" aria-label="Demo views">
+            <a href="../action-start/#start-demo" aria-label="Today"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 0 1-4 0V5a2 2 0 1 0-4 0v3h4m-2-5h12a2 2 0 0 1 2 2v12M9 8h6m-6 4h6"/></svg></a>
+            <span aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.3 6.7L21 12l-6.7 2.3L12 21l-2.3-6.7L3 12l6.7-2.3ZM20 2v4m-2-2h4M4 17v4m-2-2h4"/></svg>Goals</span>
+            <span role="img" aria-label="Growth"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h11M12 20v-8m0 2C6 15 3 11 4 7c6 0 8 3 8 7Zm0-3c0-5 3-8 8-8 0 5-3 8-8 8Z"/></svg></span>
+            <span role="img" aria-label="Profile"><svg viewBox="0 0 20 21" aria-hidden="true"><circle cx="9" cy="5" r="4"/><path d="M1 17c2.5-8.5 13-8.5 15.5 0"/></svg></span>
+          </nav>
+          </section>
+          <section class="wlp-map-screen" data-screen="map" aria-label="Goal map" hidden>
+            <div class="wlp-map-toolbar"><button type="button" data-view="goals" aria-label="Back to goals"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 19-7-7 7-7m-7 7h14"/></svg></button><div><span role="img" aria-label="Personal notes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 3H20v19H6.5A2.5 2.5 0 0 1 4 19.5v-14A2.5 2.5 0 0 1 6.5 3Z"/><path d="M15 7c-2-2-5 1-2 3l2 2 2-2c3-2 0-5-2-3Z"/></svg></span><span role="img" aria-label="Map settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-1 3-3 1v3l-2 2 2 2v3l3 1 1 3h6l1-3 3-1v-3l2-2-2-2V7l-3-1-1-3Z"/><circle cx="12" cy="12" r="3"/></svg></span></div></div>
+            <div class="wlp-map-scroll" data-map-scroll tabindex="0" aria-label="Goal map. Scroll to explore earlier actions."><div class="wlp-map-canvas" data-map-canvas></div></div>
+            <span class="wlp-map-coach" role="img" aria-label="AI coach"><img src="../../images/features/ai-coach.svg" alt=""></span>
+          </section>
+
+        </div>
+
+        <wishleaf-daily-plan-demo id="daily-plan-preview" role="dialog" aria-label="Today's plan" aria-modal="false" hidden>
+          <div class="wlp-plan-base" data-plan-base>
+            <div class="wlp-plan-top">
+              <button type="button" data-plan-notes aria-label="Edit personal notes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 3H20v19H6.5A2.5 2.5 0 0 1 4 19.5v-14A2.5 2.5 0 0 1 6.5 3Z"/><path d="M15 7c-2-2-5 1-2 3l2 2 2-2c3-2 0-5-2-3Z"/></svg>Personal notes</button>
+              <button type="button" class="wlp-plan-close" data-plan-close aria-label="Close today's plan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+            </div>
+            <div class="wlp-plan-content">
+              <div data-plan-options>
+                <p class="wlp-plan-subline">Choose today's action level</p>
+                <div class="wlp-plan-batches" data-plan-batches aria-label="Daily plan batches"></div>
+                <div class="wlp-plan-dots" data-plan-dots aria-label="Choose a suggestion batch" hidden></div>
+                <div class="wlp-plan-refresh">
+                  <button type="button" class="wlp-refresh-button" data-plan-refresh><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10a9 9 0 1 1 2.7 8M3 4v6h6"/></svg><span data-plan-remaining>Refresh · 2 left</span></button>
+                  <div data-plan-refresh-choice hidden><div class="wlp-refresh-choices"><button type="button" data-plan-refresh-now>↻ Refresh now</button><button type="button" data-plan-feedback>✎ Tell us what to change</button></div><button type="button" class="wlp-refresh-collapse" data-plan-collapse>Collapse</button></div>
+                  <p class="wlp-plan-exhausted" data-plan-exhausted hidden>No refreshes left for this session</p>
+                </div>
+              </div>
+              <form class="wlp-plan-feedback" data-plan-feedback-form hidden>
+                <button type="button" class="wlp-plan-back" data-plan-back>← Back to plan</button>
+                <label for="plan-feedback">What doesn't feel right?</label>
+                <textarea id="plan-feedback" data-plan-request maxlength="600" placeholder="For example: I only have five minutes today." required></textarea>
+                <label class="wlp-preference"><input type="checkbox" data-plan-preference><span>Add this as a preference for this goal<small>Leave unchecked to use it only for this refresh</small></span></label>
+                <p class="wlp-note-error" data-plan-note-error role="status" hidden>Personal notes are full. Please shorten your notes before adding this preference.</p>
+                <button type="submit" class="wlp-plan-submit" data-plan-feedback-submit disabled>Refresh with this request →</button>
+              </form>
+            </div>
+          </div>
+          <div class="wlp-personal-note-overlay" data-plan-note-panel hidden>
+            <form class="wlp-personal-note" data-plan-note-form role="dialog" aria-label="Personal notes" aria-modal="false">
+              <label for="plan-personal-note">Personal notes</label><p>Write down your time, resources, preferences, or limitations. AI refers to these when planning actions for this goal.</p>
+              <textarea id="plan-personal-note" data-plan-note-input maxlength="1000" placeholder="For example: I have five minutes on weekdays and prefer one small task at a time."></textarea>
+              <p class="wlp-note-count" data-plan-note-count>0/1000</p><div class="wlp-note-actions"><button type="button" data-plan-note-cancel>Cancel</button><button type="submit">Save</button></div>
+            </form>
+          </div>
+        </wishleaf-daily-plan-demo>
+        <div class="wlp-dialog-backdrop" data-detail hidden><section class="wlp-detail" role="dialog" aria-modal="false" aria-labelledby="goal-detail-title"><h3 id="goal-detail-title" data-detail-title></h3><p data-detail-copy></p><p class="wlp-detail-date" data-detail-date></p><button type="button" data-close-detail>Close</button></section></div>
+      </div>
+      <p class="wld-feedback" data-feedback role="status" aria-live="polite">Tap the green goal card to explore its map, or open Today's plan.</p>
+      <details class="wlp-demo-controls"><summary>Try a new action or a week away</summary><div class="wld-next-action"><div><span class="wld-section-label">SAMPLE ACTION</span><button type="button" class="wld-link-toggle" data-link aria-pressed="true">↗ Linked to this goal</button></div><p data-sample-action-title>Read in my corner for five minutes</p><button type="button" class="wld-complete-action" data-record>Complete this action ✓</button></div><button type="button" class="wld-return" data-return>Try returning after a week →</button></details>
+      <p class="wld-footnote">Sample goals and suggestions. Explore the green goal. Plans and notes stay in this preview; no AI request is sent.</p>
+    </wishleaf-progress-demo>
+  </section>
+  <nav class="section-nav wrap" aria-label="On this page"><a href="#connections"><span>01</span> From today to the bigger picture</a><a href="#example"><span>02</span> A history you can return to</a><a href="#questions"><span>03</span> What the records mean</a></nav>
+
+  <section class="section wrap" id="connections" aria-labelledby="connections-title">
+    <div class="section-heading"><p class="eyebrow">01 / More context for what you do</p><h2>Keep the steps.<br><em>Remember the direction.</em></h2><p>A goal progress tracker is useful when it helps you understand your own experience. In WishLeaf, the route, the associated actions, and your reflections give you different ways to look back.</p></div>
+    <div class="three-columns">
+      <article class="method"><img src="../../images/lucide-route.svg" alt="" width="35" height="35"><h3>A goal map</h3><p>Keep the starting point, milestones, and destination together. Revisit the tasks and action records linked to that goal as its route changes.</p><p class="method-question">“What am I working toward?”</p></article>
+      <article class="method"><img src="../../images/lucide-square-check-big.svg" alt="" width="35" height="35"><h3>Your action history</h3><p>See the recorded actions associated with a goal. The card's cumulative action count gives you a quick view of how often you've contributed.</p><p class="method-question">“What have I actually put into this?”</p></article>
+      <article class="method"><img src="../../images/lucide-sparkles.svg" alt="" width="35" height="35"><h3>A daily reflection</h3><p>Bring tasks, life records, goal activity, and optional notes into a daily review. Look for moments or connections worth remembering.</p><p class="method-question">“What can I learn from today?”</p></article>
+    </div>
+    <p class="section-tail">Tasks appear on a particular goal map when they are linked to that goal. Everyday tasks and life records can also stand on their own.</p>
+  </section>
+
+  <section class="tinted" id="example" aria-labelledby="example-title"><div class="section wrap">
+    <div class="section-heading"><p class="eyebrow">02 / One wish, over time</p><h2>Some days are quiet.<br><em>The earlier steps still count.</em></h2></div>
+    <div class="example-layout">
+      <div class="example-context"><h3>Make room for a calmer home.</h3><p>Start with a goal on October 1. Link small tasks to it as you go: clear a desk, put away clothes, make space to read. By October 20, you've recorded eight actions.</p><p class="note">Sample history. Try the demo above to add a linked action and see it appear here.</p><ol class="steps"><li><div><strong>Link an everyday action.</strong><p>Associate “Clear my desk” with the home goal.</p></div></li><li><div><strong>Keep the experience.</strong><p>Revisit associated actions and add notes about what worked.</p></div></li><li><div><strong>Choose where to go next.</strong><p>Use the goal's current milestone or adjust the route when your plans change.</p></div></li></ol></div>
+<wishleaf-history-demo class="demo-stage wlp-history-demo" aria-label="Explore recorded goal actions">
+        <div class="wld-demo-caption"><span><i></i> Goal map · action records</span><span class="wld-sample-tag" data-history-count>8 actions</span></div>
+        <div class="wlp-phone wlp-history-phone"><div class="wlp-preview-base" data-preview-base><div class="wlp-map-screen"><div class="wlp-map-toolbar"><span role="img" aria-label="Back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 19-7-7 7-7m-7 7h14"/></svg></span><div><span role="img" aria-label="Personal notes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 3H20v19H6.5A2.5 2.5 0 0 1 4 19.5v-14A2.5 2.5 0 0 1 6.5 3Z"/><path d="M15 7c-2-2-5 1-2 3l2 2 2-2c3-2 0-5-2-3Z"/></svg></span><span role="img" aria-label="Map settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-1 3-3 1v3l-2 2 2 2v3l3 1 1 3h6l1-3 3-1v-3l2-2-2-2V7l-3-1-1-3Z"/><circle cx="12" cy="12" r="3"/></svg></span></div></div><div class="wlp-map-scroll" data-map-scroll tabindex="0" aria-label="Goal map. Scroll to explore earlier actions."><div class="wlp-map-canvas" data-map-canvas></div></div><span class="wlp-map-coach" role="img" aria-label="AI coach"><img src="../../images/features/ai-coach.svg" alt=""></span></div></div><div class="wlp-dialog-backdrop" data-detail hidden><section class="wlp-detail" role="dialog" aria-modal="false" aria-labelledby="history-detail-title"><h3 id="history-detail-title" data-detail-title></h3><p data-detail-copy></p><p class="wlp-detail-date" data-detail-date></p><button type="button" data-close-detail>Close</button></section></div></div>
+        <p class="wld-footnote" data-history-note>Tap a star to open its action record. Scroll down to see earlier steps.</p>
+      </wishleaf-history-demo>
+    </div>
+    <div class="metrics-explainer"><div><h3>What “Days” means</h3><p>The calendar-day span from goal creation to its most recent activity, including both dates. It describes the goal's recorded journey; it is neither consecutive completion days nor a count of days with activity.</p></div><div><h3>What “Actions” means</h3><p>The cumulative number of recorded actions associated with the goal. Use it to see your contributions alongside the actual records and milestones.</p></div></div>
+    <p class="section-tail">These numbers describe time and recorded contributions. To understand a change in skill or ability, look at the work itself, your experience, and the milestones you've reached.</p>
+  </div></section>
+
+  <section class="section wrap" aria-labelledby="reflection-title"><div class="split">
+    <wishleaf-reflection-demo class="demo-stage wld-reflection-demo" aria-label="Explore a daily reflection">
+      <div class="wld-demo-caption"><span><i></i> Daily review · Healing</span><button type="button" class="wld-reset" data-reflection-theme aria-pressed="false" aria-label="Use dark reflection theme">Dark ☾</button></div>
+      <div class="wlp-poster">
+        <div class="wlp-poster-ornament" aria-hidden="true"><img class="wlp-ornament-star" src="../../images/features/poster-normal_star.svg" alt=""><img class="wlp-ornament-moon" src="../../images/features/poster-moon.svg" alt=""><img class="wlp-ornament-ray" src="../../images/features/poster-golden_ray.svg" alt=""><img class="wlp-ornament-clover" src="../../images/features/poster-clover.svg" alt=""><img class="wlp-vine-left" src="../../images/features/poster-Large_vine.svg" alt=""><img class="wlp-vine-right" src="../../images/features/poster-Large_vine.svg" alt=""></div>
+        <p class="wlp-poster-date" data-reflection-date>20/10</p>
+        <h3 class="wlp-energy-title">🔮 Energy Distribution</h3>
+        <div class="wlp-energy" data-reflection-energy><p>[ 60% 🌱 Home &amp; focus ]<span>A little care for the space around you.</span></p><p>[ 30% 🌙 Body &amp; mind ]<span>A walk outside, a moment to breathe.</span></p><p>[ 10% 🌀 Recovery ]<span>Time to pause and put the day into words.</span></p></div>
+        <h3 class="wlp-poster-section"><img class="" src="../../images/features/poster-thin_vine.svg" alt="">Highlight<img class="wlp-mirrored" src="../../images/features/poster-thin_vine.svg" alt=""></h3>
+        <h4 data-reflection-title>A little room for yourself.</h4><p class="wlp-poster-copy" data-reflection-copy></p>
+        <h3 class="wlp-poster-section"><img class="" src="../../images/features/poster-three_stars_in_gruop.svg" alt="">Star Signal<img class="wlp-mirrored" src="../../images/features/poster-three_stars_in_gruop.svg" alt=""></h3>
+        <p class="wlp-poster-copy" data-reflection-signal>A comfortable corner can be an invitation. You made a little space today; tomorrow, you can enjoy being in it.</p>
+        <div class="wlp-poster-wishes"><h4><img class="" src="../../images/features/poster-Diamond.svg" alt=""><span data-reflection-goal>1 wish nurtured today</span><img class="" src="../../images/features/poster-Diamond.svg" alt=""></h4><p data-reflection-goal-name>Make room for a calmer home</p></div>
+        <div class="wlp-garden-gains"><h4><img class="" src="../../images/features/poster-water_Can.svg" alt="">Garden Gains</h4><p data-reflection-gains>💧 +1 &nbsp; ☀️ +2 &nbsp; 🌱 +1</p></div>
+        <div class="wlp-poster-signature"><img class="" src="../../images/features/poster-thin_vine.svg" alt=""><span>WishLeaf</span><img class="wlp-mirrored" src="../../images/features/poster-thin_vine.svg" alt=""></div>
+      </div>
+      <button type="button" class="wld-reflection-toggle" data-show-records aria-expanded="false">See the sample activities <span aria-hidden="true">↓</span></button><ul class="wld-reflection-records" data-reflection-records hidden></ul>
+      <p class="wld-footnote">Healing template from the app, with sample reflection content.</p>
+    </wishleaf-reflection-demo>
+    <div class="split-copy"><p class="eyebrow">A daily moment to look back</p><h2 id="reflection-title">Give today<br><em>a little context.</em></h2><p>Daily reflection brings together the day's tasks, life records, goal activity, and notes you choose to add. With available AI access, it can also offer highlights, an observation diary, or a message for the next day.</p><p>Reopen past days through the activity heatmap. Weekly Insight offers another view of your recent actions when its activity and AI eligibility conditions are met.</p><p>Some days you may discover a useful approach. On others, the record simply helps you remember that you showed up.</p></div>
+  </div></section>
+
+  <section class="tinted-blue" id="questions" aria-labelledby="questions-title"><div class="section wrap">
+    <div class="section-heading"><p class="eyebrow">03 / Clear expectations</p><h2>A record you can<br><em>understand.</em></h2></div>
+    <div class="boundaries"><h3>Know what you're looking at</h3><ul><li>Goal maps contain records linked to that goal. A standalone task is not automatically added to every map.</li><li>Action counts and date spans describe recorded effort. They do not measure your intelligence, discipline, or future potential.</li><li>AI reflections depend on account allowances and product conditions. Review interpretations against your own experience.</li></ul></div>
+    <div class="faq">
+      <details><summary>Do I need to maintain a daily streak?</summary><p>No compulsory daily streak is used for the goal card's Days and Actions figures. Days is the inclusive span from goal creation to the latest activity; Actions is a cumulative count. You can return to the same goal after a break and add to its history.</p></details>
+      <details><summary>Does every task appear on my goal map?</summary><p>A task appears on a goal's map when it is associated with that goal. You can also use tasks and life records independently, without creating a long-term goal first.</p></details>
+      <details><summary>Does a higher action count mean my ability has improved?</summary><p>The count tells you how many actions were recorded for the goal. Assess changes in ability using the work you produced, relevant milestones, and your own observations. Your present activity also doesn't define what you'll be able to do in the future.</p></details>
+      <details><summary>Can I change the route after I start?</summary><p>Yes. You can edit unfinished milestones or review an AI replan. Completed milestones are retained through later editing and AI replanning. AI blueprint creation and replanning use Blueprint Tickets or Pro access; the current balance and terms are shown in the app.</p></details>
+      <details><summary>What happens when my AI allowance runs out?</summary><p>Manual tasks, manual goals, goal maps, and existing records remain available. Basic daily statistics and your own notes can still be saved, while AI-generated highlights and other AI content may be unavailable. Weekly Insight has separate activity and AI eligibility conditions.</p></details>
+      <details><summary>Can I track financial results or automatic progress percentages?</summary><p>The experience described here covers milestones, linked actions, counts, and reflection. It doesn't promise a financial dashboard, an automatic goal-completion percentage, or a forecast of when you'll achieve a result.</p></details>
+    </div>
+  </div></section>
+  <div class="wrap"><a class="next-feature" href="../action-start/"><div><p class="eyebrow">Looking for a way into today's task?</p><h3>Find your own way to start.</h3></div><span class="arrow" aria-hidden="true">↗</span></a></div>
+  <section class="closing wrap" aria-labelledby="download-title"><img src="../../images/icon.svg" alt="" width="38" height="38"><h2 id="download-title">A step today.<br><em>A story to look back on.</em></h2><p>Make a little room for what matters to you.</p><a class="store" href="https://apps.apple.com/us/app/wishleaf/id6762046509" target="_blank" rel="noopener noreferrer" data-download-location="closing" data-app-store data-cta-location="footer" aria-label="Download WishLeaf on the App Store"><span class="apple-mark" aria-hidden="true"></span><span><small>Download on the</small><strong>App Store</strong></span></a><p class="note">For iPhone · Free to download · In-app purchases</p></section>
+</main>
+<footer class="site-footer wrap"><a class="brand" href="../../"><img src="../../images/icon.svg" alt="" width="22" height="22">WishLeaf</a><p>© 2026 DreamRove LLC.</p><nav aria-label="Footer navigation"><a href="../../behind-wishleaf/">Behind WishLeaf</a><a href="../../privacy/">Privacy</a><a href="../../terms/">Terms</a><a href="../../support/">Support</a></nav></footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.feature-menu{position:relative;z-index:10}
+.feature-menu>summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 0;list-style:none;cursor:pointer;font:inherit;color:var(--ink)}
+.feature-menu>summary::-webkit-details-marker{display:none}
+.feature-menu>summary::after{content:"";width:6px;height:6px;margin-top:-3px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
+.feature-menu[open]>summary::after{margin-top:3px;transform:rotate(225deg)}
+.feature-menu-panel{position:absolute;top:calc(100% + 4px);right:0;width:240px;max-width:calc(100vw - 40px);padding:8px;border:1px solid var(--color-border);border-radius:var(--radius-md);background:var(--paper);box-shadow:var(--shadow-card)}
+.feature-menu-panel a{display:flex;align-items:center;min-height:44px;padding:10px 14px;border-radius:8px;line-height:1.5;white-space:nowrap}
+.feature-menu-panel a:hover,.feature-menu-panel a:focus-visible,.feature-menu-panel a[aria-current=page]{background:color-mix(in srgb,var(--sage) 22%,var(--paper));color:var(--ink);text-decoration:none}
+.feature-menu-panel a[aria-current="page"] { font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+
+.wl-header {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 40px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.wl-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 25px/1 Fraunces, Georgia, serif;
+  white-space: nowrap;
+}
+.wl-brand sup { align-self: flex-start; margin: 2px 0 0 -6px; font: 11px/1 system-ui, sans-serif; }
+.wl-nav {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 24px;
+  font: 14px/1.4 "Inter Tight", Inter, sans-serif;
+}
+.wl-download { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-weight: 600; white-space: nowrap; }
+@media (max-width: 700px) {
+  .wl-header { height: 76px; padding-inline: 20px; gap: 8px; }
+  .wl-brand { gap: 6px; font-size: 21px; }
+  .wl-brand img { width: 24px; height: 24px; }
+  .wl-nav { gap: 14px; font-size: 13px; }
+  .wl-nav .feature-menu { position: static; }
+  .wl-nav { z-index: 10; }
+  .wl-download span { display: none; }
+}

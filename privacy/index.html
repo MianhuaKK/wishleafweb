@@ -5,9 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="WishLeaf Privacy Policy">
-  <meta name="theme-color" content="#2F4533">
+  <meta name="theme-color" content="#FCF9F1">
   <title>Privacy Policy · WishLeaf</title>
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://wishleaf.app/privacy/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WishLeaf">
+  <meta property="og:title" content="Privacy Policy · WishLeaf">
+  <meta property="og:description" content="WishLeaf Privacy Policy">
+  <meta property="og:url" content="https://wishleaf.app/privacy/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Privacy Policy · WishLeaf">
+  <meta name="twitter:description" content="WishLeaf Privacy Policy">
   <link rel="icon" href="./images/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./tokens.css">
   <style>
     @font-face {
       font-family: "Fraunces";
@@ -23,21 +34,11 @@
       font-weight: 400;
       font-display: swap;
     }
-    :root {
-      color-scheme: light;
-      --forest: #2f4533;
-      --forest-dark: #26382a;
-      --paper: #f6f1e6;
-      --ink: #29332a;
-      --muted: #6d776c;
-      --sage: #b7bca3;
-      --rule: rgba(47, 69, 51, 0.16);
-    }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      background: var(--paper);
+      background-color: var(--paper);
       color: var(--ink);
       font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 16px;
@@ -45,9 +46,9 @@
     }
     a { color: inherit; }
     .topbar {
-      background: var(--forest);
-      color: #fcf9f1;
-      border-bottom: 1px solid rgba(252, 249, 241, 0.12);
+      background: var(--paper);
+      color: var(--ink);
+      border-bottom: 1px solid var(--color-border);
     }
     .topbar-inner {
       width: min(100% - 40px, 960px);
@@ -70,21 +71,21 @@
     }
     .back {
       margin-left: auto;
-      color: #d8decb;
+      color: var(--muted);
       font-size: 13px;
       letter-spacing: 0.02em;
       text-decoration: none;
     }
-    .back:hover, .back:focus-visible { color: #fff; text-decoration: underline; }
+    .back:hover, .back:focus-visible { color: var(--ink); text-decoration: underline; }
     .hero {
-      background: var(--forest);
-      color: #fcf9f1;
+      background: rgb(183 188 163 / 16%);
+      color: var(--ink);
       padding: 70px 20px 92px;
       text-align: center;
     }
     .eyebrow {
       margin: 0 0 12px;
-      color: var(--sage);
+      color: var(--muted);
       font: italic 13px/1.4 "Fraunces", Georgia, serif;
       letter-spacing: 0.16em;
       text-transform: uppercase;
@@ -96,7 +97,7 @@
     }
     .dates {
       margin: 22px 0 0;
-      color: #d8decb;
+      color: var(--muted);
       font-size: 13px;
       line-height: 1.65;
     }
@@ -105,20 +106,20 @@
       margin: -38px auto 72px;
       padding: clamp(30px, 6vw, 64px);
       position: relative;
-      background: #fffdf8;
-      border: 1px solid rgba(47, 69, 51, 0.1);
-      border-radius: 22px;
-      box-shadow: 0 24px 65px rgba(38, 56, 42, 0.12);
+      background: var(--paper);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
     }
     .intro {
       margin-top: 0;
-      color: #465247;
+      color: var(--ink);
       font: 400 clamp(20px, 3vw, 24px)/1.55 "Fraunces", Georgia, serif;
     }
     h2 {
       margin: 52px 0 13px;
       padding-top: 4px;
-      color: var(--forest-dark);
+      color: var(--ink);
       font: 600 clamp(25px, 4vw, 31px)/1.24 "Fraunces", Georgia, serif;
       letter-spacing: -0.02em;
     }
@@ -128,11 +129,11 @@
       width: 42px;
       height: 2px;
       margin-top: 13px;
-      background: #9dac96;
+      background: var(--leaf);
     }
     h3 {
       margin: 30px 0 8px;
-      color: var(--forest-dark);
+      color: var(--ink);
       font: 650 19px/1.35 "Fraunces", Georgia, serif;
     }
     p { margin: 10px 0 16px; }
@@ -141,22 +142,22 @@
       padding-left: 1.3rem;
     }
     li { margin: 5px 0; padding-left: 0.25rem; }
-    li::marker { color: #778b73; }
+    li::marker { color: var(--ink); }
     address { font-style: normal; }
     .contact-card {
       margin-top: 18px;
       padding: 20px 22px;
       border: 1px solid var(--rule);
-      border-radius: 14px;
+      border-radius: var(--radius-md);
       background: rgba(183, 188, 163, 0.12);
     }
     .contact-card p { margin: 0; }
-    .contact-card a { color: #315d3a; font-weight: 700; }
+    .contact-card a { color: var(--ink); font-weight: 700; }
     .table-wrap {
       margin: 22px 0 28px;
       overflow-x: auto;
       border: 1px solid var(--rule);
-      border-radius: 14px;
+      border-radius: var(--radius-md);
     }
     table {
       width: 100%;
@@ -171,41 +172,46 @@
       text-align: left;
       border-bottom: 1px solid var(--rule);
     }
-    th { background: rgba(183, 188, 163, 0.18); color: var(--forest-dark); }
+    th { background: rgba(183, 188, 163, 0.18); color: var(--ink); }
     tr:last-child td { border-bottom: 0; }
     footer {
-      background: var(--forest-dark);
-      color: #b7c1b2;
+      border-top: 1px solid var(--color-border);
+      background: var(--ink);
+      color: var(--muted);
       padding: 28px 20px;
       text-align: center;
       font-size: 12px;
     }
-    footer a { color: #d8decb; }
+    footer a { color: var(--muted); }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     @media (max-width: 600px) {
       body { font-size: 15px; }
       .topbar-inner { width: min(100% - 30px, 960px); min-height: 68px; }
       .hero { padding: 52px 18px 72px; }
-      .page { width: calc(100% - 24px); margin-top: -28px; border-radius: 16px; }
+      .page { width: calc(100% - 24px); margin-top: -28px; border-radius: var(--radius-lg); }
       h2 { margin-top: 42px; }
       .back span { display: none; }
     }
   </style>
+  <link rel="stylesheet" href="./analytics.css">
+  <script src="./analytics-config.js" defer></script>
+  <script src="./analytics.js" defer></script>
 </head>
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="./index.html" aria-label="WishLeaf home">
+      <a class="brand" href="./" aria-label="WishLeaf home">
         <img src="./images/icon.svg" alt="">
         <span>WishLeaf</span>
       </a>
-      <a class="back" href="./index.html" aria-label="Back to WishLeaf home">← <span>Back to WishLeaf</span></a>
+      <a class="back" href="./" aria-label="Back to WishLeaf home">← <span>Back to WishLeaf</span></a>
     </div>
   </header>
 
   <section class="hero" aria-labelledby="page-title">
     <p class="eyebrow">Your trust matters</p>
     <h1 id="page-title">Privacy Policy</h1>
-    <p class="dates">Effective Date: September 8, 2026<br>Last Updated: September 8, 2026</p>
+    <p class="dates">Effective Date: September 8, 2026<br>Last Updated: October 31, 2026</p>
   </section>
 
   <main class="page">
@@ -272,6 +278,12 @@
       <p>WishLeaf does not directly collect or store your full payment card number, bank account number, or payment card security code.</p>
       <p>To verify and manage subscriptions, we may receive information from app marketplaces or subscription-management providers, including:</p>
       <ul><li>whether you have made a purchase or subscribed;</li><li>the type of subscription or product;</li><li>current subscription status;</li><li>subscription expiration or renewal information;</li><li>receipts, transaction identifiers, or other purchase-status information necessary for subscription verification.</li></ul>
+
+      <h3 id="website-analytics">2.7 Optional Website Analytics</h3>
+      <p>If enabled on our website, Google Analytics 4 helps us understand which public pages and App Store buttons lead to download interest. Google Analytics is loaded only after you allow analytics. If you reject analytics, have not made a choice, or your browser sends Global Privacy Control or Do Not Track, we do not load Google Analytics or send analytics events. Downloads continue to work.</p>
+      <p>With your permission, Google Analytics uses first-party cookies and processes public page paths, content categories, button locations, and technical visit information. We remove query strings and fragments from page URLs and keep only the origin of referring pages. We do not send your name, email address, task content, notes, or other app content to website analytics. Google receives technical connection information when its service is used. Advertising personalization and Google signals are disabled.</p>
+      <p>Your analytics choice is stored in this browser for up to 180 days; analytics cookies are configured to expire after 180 days. You can change or withdraw your choice using <strong>Privacy settings</strong> in the website footer. Withdrawal stops future website analytics collection and removes accessible Google Analytics cookies; it does not erase data already received by Google. If browser storage is unavailable, your choice applies only to the current page.</p>
+      <p>App Store download links may use campaign links generated in App Store Connect so Apple can report aggregate campaign downloads. Apple processes visits and downloads under its own privacy practices. A website button click measures download interest; only Apple can confirm an App Store download. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> · <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></p>
     </section>
 
     <section>
