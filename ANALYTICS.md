@@ -4,7 +4,7 @@
 
 2026-10-31 检查：网站是原生 HTML/CSS/JavaScript 静态站点；`frontend` 是独立 Git 仓库，`CNAME` 为 `wishleaf.app`。无构建工具或后端分析接口；未发现 GA4、GTM、其他分析脚本、Cookie 横幅或已有同意状态。功能页原有 `data-download-location` 只是标记，并没有发事件。保留已有页面、动画、SEO 元数据与用户尚未提交的修改。
 
-现统一加载 `analytics-config.js`、`analytics.js`、`analytics.css`，没有引入第二套分析 SDK。用户确认尚无 GA4，所以 `measurementId` 留空：**当前不会加载 Google 脚本、发送 GA 请求或设置分析 Cookie**。首页 5 个下载链接（含两个可点击二维码）、任务开始页 3 个按钮、进度追踪页 3 个按钮已标注，共 11 个入口。其他页面加载同一模块以支持页面归因和隐私设置。
+现统一加载 `analytics-config.js`、`analytics.js`、`analytics.css`，没有引入第二套分析 SDK。用户确认尚无 GA4，所以 `measurementId` 留空：**当前不会加载 Google 脚本、发送 GA 请求或设置分析 Cookie**。首页 5 个下载链接（含两个可点击二维码）、任务开始页 3 个按钮、进度追踪页 3 个按钮、AI Coach 页 3 个按钮已标注，共 14 个入口。其他页面加载同一模块以支持页面归因和隐私设置。
 
 本地测试验证事件队列和页面集成；未创建 GA 账号、未连接真实数据流、未在真实 GA4 DebugView 验收，也未部署。完成下面的账号配置并部署后才能做真实接收验收。
 
@@ -34,6 +34,7 @@ Consent 使用 basic 模式：同意前不下载 Google tag，也不发送无 Co
 | `/` | `home` | `navigation`、`hero` × 2、`footer` × 2（按钮和可点击二维码） |
 | `/features/action-start/` | `task_start` | `navigation`、`hero`、`footer` |
 | `/features/goal-progress/` | `progress_tracking` | `navigation`、`hero`、`footer` |
+| `/features/ai-coach/` | `ai_coach` | `navigation`、`hero`、`footer` |
 | `/behind-wishleaf/` | `brand_story` | 当前无下载链接 |
 | `/privacy/`、`/terms/`、`/support/` | `privacy`、`terms`、`support` | 当前无下载链接 |
 
@@ -85,7 +86,7 @@ GA4 自动外链事件叫 `click`，带 `outbound`、`link_domain` 和 `link_url
 
 1. 使用新浏览器会话访问首页和任务开始页；在 Network 检查同意前没有 `googletagmanager.com/gtag/js`、`google-analytics.com/g/collect` 请求。拒绝后点击下载，确认新标签页正常打开，GA 无事件。
 2. 打开页脚 Privacy settings，允许分析。控制台执行 `WishLeafAnalytics.setDebug(true)`，然后刷新；此设置仅该标签页生效，刷新后 `page_view` 和点击携带 `debug_mode: true`。也可用 Google Tag Assistant。前往 GA4 Admin → Data display → **DebugView** 选择当前调试设备。
-3. 逐个点击现有 11 个入口（可点其内部图标/文字），返回原页面，检查每个动作恰好一个 `app_store_click`，4 项参数和表中的位置一致。Network 的 collect 请求应具有 `en=app_store_click`，`ep.cta_location`、`ep.destination` 和主题/页面字段正确，使用真实 ID。
+3. 逐个点击现有 14 个入口（可点其内部图标/文字），返回原页面，检查每个动作恰好一个 `app_store_click`，4 项参数和表中的位置一致。Network 的 collect 请求应具有 `en=app_store_click`，`ep.cta_location`、`ep.destination` 和主题/页面字段正确，使用真实 ID。
 4. 若启用自动外链，对照自动 `click` 的 App Store 域名；确认报表只过滤自定义事件且没有 GA 创建事件规则或 GTM 重复发送。同样测试键盘 Enter、Ctrl/Cmd+点击与中键；右键打开菜单本身不计数。
 5. 在测试 URL 的 query/hash 放入虚构测试值（不要使用真实个人信息），检查 GA 请求中的页面 URL 没有 query/hash；referrer 无路径和 query。检查 campaign 参数仍在最终 App Store 目的链接内，而不在自定义事件字段中。
 6. 撤回同意后再点击，确认停止事件且 `_ga` Cookie 被清除。开另一标签页验证拒绝同步；启用浏览器隐私信号后重新加载，确认不加载 GA。阻断 Google 请求或禁用 JavaScript，下载仍正常。

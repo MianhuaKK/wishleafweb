@@ -326,5 +326,5 @@ test('every static page loads shared assets once and every download entry has a 
       assert.equal(payload.cta_location, browser.anchor.dataset.ctaLocation);
     }
   }
-  assert.equal(downloadCount, 11);
+  assert.equal(downloadCount, 14);
 });

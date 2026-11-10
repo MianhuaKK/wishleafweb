@@ -16,6 +16,7 @@ window.WishLeafAnalyticsConfig = Object.freeze({
     '/': 'home',
     '/features/action-start/': 'task_start',
     '/features/goal-progress/': 'progress_tracking',
+    '/features/ai-coach/': 'ai_coach',
     '/behind-wishleaf/': 'brand_story',
     '/privacy/': 'privacy',
     '/terms/': 'terms',
