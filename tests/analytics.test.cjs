@@ -299,10 +299,15 @@ function htmlFiles(dir) {
       entry.name.endsWith('.html') ? [path.join(dir, entry.name)] : []);
 }
 
-test('every static page loads shared assets once and every download entry has a location', () => {
+test('every content page loads shared assets once and every download entry has a location', () => {
   let downloadCount = 0;
   for (const file of htmlFiles(root)) {
     const html = fs.readFileSync(file, 'utf8');
+    // Google's verification endpoint must retain its plain verification content.
+    if (path.relative(root, file) === 'google44cad68a1806390c.html') {
+      assert.equal(html.trim(), 'google-site-verification: google44cad68a1806390c.html');
+      continue;
+    }
     const route = '/' + path.relative(root, file).replaceAll(path.sep, '/').replace(/index\.html$/, '');
     const browser = boot({ url: 'https://wishleaf.app' + route });
     browser.allow();
