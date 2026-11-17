@@ -14,8 +14,8 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Keep training permission separate from search access.
+# Allow GPTBot to crawl public pages for model training.
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 Sitemap: https://wishleaf.app/sitemap.xml
